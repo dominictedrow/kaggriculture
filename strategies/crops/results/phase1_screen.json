@@ -1,0 +1,1778 @@
+{
+  "wheat-mono_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 3299.1666666666665,
+      "median": 3295.0,
+      "min": 3253.0,
+      "max": 3351.0,
+      "stdev": 43.28702653990762
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3309.8333333333335,
+      "median": 3334.0,
+      "min": 3253.0,
+      "max": 3348.0,
+      "stdev": 44.32343247839304
+    },
+    "combined_mean": 3304.5,
+    "elapsed": 9.566590070724487
+  },
+  "wheat-mono_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 3504.5,
+      "median": 3499.0,
+      "min": 3455.0,
+      "max": 3576.0,
+      "stdev": 55.54727716099143
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3571.3333333333335,
+      "median": 3569.0,
+      "min": 3569.0,
+      "max": 3576.0,
+      "stdev": 3.6147844564602556
+    },
+    "combined_mean": 3537.916666666667,
+    "elapsed": 10.17255711555481
+  },
+  "wheat-mono_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 3601.6666666666665,
+      "median": 3620.0,
+      "min": 3495.0,
+      "max": 3635.0,
+      "stdev": 54.283207962192755
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3567.1666666666665,
+      "median": 3605.0,
+      "min": 3468.0,
+      "max": 3635.0,
+      "stdev": 71.38744053870167
+    },
+    "combined_mean": 3584.4166666666665,
+    "elapsed": 10.273700952529907
+  },
+  "wheat-mono_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 3472.8333333333335,
+      "median": 3430.0,
+      "min": 3425.0,
+      "max": 3582.0,
+      "stdev": 71.30334260514486
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3464.6666666666665,
+      "median": 3490.0,
+      "min": 3329.0,
+      "max": 3575.0,
+      "stdev": 115.04028279983784
+    },
+    "combined_mean": 3468.75,
+    "elapsed": 10.467855215072632
+  },
+  "wheat-mono_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 3522.8333333333335,
+      "median": 3583.0,
+      "min": 3358.0,
+      "max": 3646.0,
+      "stdev": 125.25081503394166
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3516.8333333333335,
+      "median": 3525.0,
+      "min": 3380.0,
+      "max": 3646.0,
+      "stdev": 127.32543605527792
+    },
+    "combined_mean": 3519.8333333333335,
+    "elapsed": 12.154030799865723
+  },
+  "wheat-mono_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 3461.6666666666665,
+      "median": 3485.0,
+      "min": 3328.0,
+      "max": 3585.0,
+      "stdev": 116.85831877391813
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3466.8333333333335,
+      "median": 3469.5,
+      "min": 3330.0,
+      "max": 3605.0,
+      "stdev": 122.98522946543892
+    },
+    "combined_mean": 3464.25,
+    "elapsed": 11.307807922363281
+  },
+  "carrot-mono_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 3218.0,
+      "median": 3211.5,
+      "min": 3173.0,
+      "max": 3276.0,
+      "stdev": 49.97599423723354
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3201.0,
+      "median": 3191.0,
+      "min": 3157.0,
+      "max": 3272.0,
+      "stdev": 50.584582631469836
+    },
+    "combined_mean": 3209.5,
+    "elapsed": 13.960021257400513
+  },
+  "carrot-mono_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 3289.8333333333335,
+      "median": 3270.5,
+      "min": 3189.0,
+      "max": 3425.0,
+      "stdev": 112.86880289374326
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3299.3333333333335,
+      "median": 3285.0,
+      "min": 3171.0,
+      "max": 3433.0,
+      "stdev": 85.28931156168788
+    },
+    "combined_mean": 3294.5833333333335,
+    "elapsed": 22.00306797027588
+  },
+  "carrot-mono_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 3397.8333333333335,
+      "median": 3412.5,
+      "min": 3307.0,
+      "max": 3467.0,
+      "stdev": 75.22344492687547
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3217.0,
+      "median": 3168.5,
+      "min": 3160.0,
+      "max": 3465.0,
+      "stdev": 121.83595528414426
+    },
+    "combined_mean": 3307.416666666667,
+    "elapsed": 28.759925842285156
+  },
+  "carrot-mono_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 3146.3333333333335,
+      "median": 3101.5,
+      "min": 3059.0,
+      "max": 3310.0,
+      "stdev": 106.88248999095534
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3097.6666666666665,
+      "median": 3091.0,
+      "min": 3040.0,
+      "max": 3162.0,
+      "stdev": 63.59140403125777
+    },
+    "combined_mean": 3122.0,
+    "elapsed": 37.93098998069763
+  },
+  "carrot-mono_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 3205.5,
+      "median": 3172.0,
+      "min": 3038.0,
+      "max": 3400.0,
+      "stdev": 166.03824860555474
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3178.8333333333335,
+      "median": 3177.5,
+      "min": 3035.0,
+      "max": 3332.0,
+      "stdev": 132.03244550740803
+    },
+    "combined_mean": 3192.166666666667,
+    "elapsed": 34.95274901390076
+  },
+  "carrot-mono_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 3090.8333333333335,
+      "median": 3055.5,
+      "min": 2938.0,
+      "max": 3269.0,
+      "stdev": 147.03117583242906
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3108.5,
+      "median": 3113.0,
+      "min": 2919.0,
+      "max": 3315.0,
+      "stdev": 181.01243051238222
+    },
+    "combined_mean": 3099.666666666667,
+    "elapsed": 17.82459330558777
+  },
+  "melon-mono_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 7534.0,
+      "median": 7534.0,
+      "min": 7534.0,
+      "max": 7534.0,
+      "stdev": 0.0
+    },
+    "starter": {
+      "n": 6,
+      "mean": 7534.0,
+      "median": 7534.0,
+      "min": 7534.0,
+      "max": 7534.0,
+      "stdev": 0.0
+    },
+    "combined_mean": 7534.0,
+    "elapsed": 16.303901195526123
+  },
+  "melon-mono_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 10687.0,
+      "median": 10687.0,
+      "min": 10687.0,
+      "max": 10687.0,
+      "stdev": 0.0
+    },
+    "starter": {
+      "n": 6,
+      "mean": 10687.0,
+      "median": 10687.0,
+      "min": 10687.0,
+      "max": 10687.0,
+      "stdev": 0.0
+    },
+    "combined_mean": 10687.0,
+    "elapsed": 15.653932332992554
+  },
+  "melon-mono_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 11194.333333333334,
+      "median": 11181.0,
+      "min": 11181.0,
+      "max": 11261.0,
+      "stdev": 32.65986323710904
+    },
+    "starter": {
+      "n": 6,
+      "mean": 11181.0,
+      "median": 11181.0,
+      "min": 11181.0,
+      "max": 11181.0,
+      "stdev": 0.0
+    },
+    "combined_mean": 11187.666666666668,
+    "elapsed": 17.232404947280884
+  },
+  "melon-mono_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 10714.333333333334,
+      "median": 10701.0,
+      "min": 10701.0,
+      "max": 10781.0,
+      "stdev": 32.65986323710904
+    },
+    "starter": {
+      "n": 6,
+      "mean": 10727.666666666666,
+      "median": 10701.0,
+      "min": 10701.0,
+      "max": 10861.0,
+      "stdev": 65.31972647421809
+    },
+    "combined_mean": 10721.0,
+    "elapsed": 18.02721095085144
+  },
+  "melon-mono_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 11469.0,
+      "median": 11429.0,
+      "min": 11429.0,
+      "max": 11669.0,
+      "stdev": 97.97958971132712
+    },
+    "starter": {
+      "n": 6,
+      "mean": 11455.666666666666,
+      "median": 11429.0,
+      "min": 11429.0,
+      "max": 11509.0,
+      "stdev": 41.31182235954578
+    },
+    "combined_mean": 11462.333333333332,
+    "elapsed": 22.89957308769226
+  },
+  "melon-mono_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 11389.0,
+      "median": 11389.0,
+      "min": 11349.0,
+      "max": 11429.0,
+      "stdev": 43.81780460041329
+    },
+    "starter": {
+      "n": 6,
+      "mean": 11415.666666666666,
+      "median": 11389.0,
+      "min": 11349.0,
+      "max": 11509.0,
+      "stdev": 78.655366420014
+    },
+    "combined_mean": 11402.333333333332,
+    "elapsed": 24.14409375190735
+  },
+  "wheat-carrot-11_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 3286.6666666666665,
+      "median": 3288.5,
+      "min": 3268.0,
+      "max": 3305.0,
+      "stdev": 14.814407401805402
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3269.8333333333335,
+      "median": 3268.0,
+      "min": 3249.0,
+      "max": 3298.0,
+      "stdev": 17.04601615236436
+    },
+    "combined_mean": 3278.25,
+    "elapsed": 31.81888175010681
+  },
+  "wheat-carrot-11_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 3460.0,
+      "median": 3466.0,
+      "min": 3401.0,
+      "max": 3497.0,
+      "stdev": 34.73326935374786
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3427.3333333333335,
+      "median": 3419.0,
+      "min": 3374.0,
+      "max": 3475.0,
+      "stdev": 40.59885055844151
+    },
+    "combined_mean": 3443.666666666667,
+    "elapsed": 29.24581480026245
+  },
+  "wheat-carrot-11_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 3489.1666666666665,
+      "median": 3483.5,
+      "min": 3460.0,
+      "max": 3543.0,
+      "stdev": 30.81179427859836
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3480.8333333333335,
+      "median": 3484.0,
+      "min": 3404.0,
+      "max": 3562.0,
+      "stdev": 60.87829388761372
+    },
+    "combined_mean": 3485.0,
+    "elapsed": 25.78584885597229
+  },
+  "wheat-carrot-11_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 3404.6666666666665,
+      "median": 3400.5,
+      "min": 3351.0,
+      "max": 3463.0,
+      "stdev": 44.73328365620689
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3382.6666666666665,
+      "median": 3405.5,
+      "min": 3252.0,
+      "max": 3445.0,
+      "stdev": 70.62766219171257
+    },
+    "combined_mean": 3393.6666666666665,
+    "elapsed": 37.367244482040405
+  },
+  "wheat-carrot-11_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 3378.8333333333335,
+      "median": 3382.5,
+      "min": 3265.0,
+      "max": 3502.0,
+      "stdev": 100.81550806630231
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3376.0,
+      "median": 3361.5,
+      "min": 3244.0,
+      "max": 3505.0,
+      "stdev": 98.4377976185977
+    },
+    "combined_mean": 3377.416666666667,
+    "elapsed": 38.10885953903198
+  },
+  "wheat-carrot-11_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 3403.0,
+      "median": 3399.5,
+      "min": 3330.0,
+      "max": 3488.0,
+      "stdev": 55.28833511691232
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3297.6666666666665,
+      "median": 3292.5,
+      "min": 3239.0,
+      "max": 3361.0,
+      "stdev": 44.71092334840186
+    },
+    "combined_mean": 3350.333333333333,
+    "elapsed": 22.13997721672058
+  },
+  "wheat-carrot-21_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          2
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 3311.0,
+      "median": 3325.5,
+      "min": 3274.0,
+      "max": 3337.0,
+      "stdev": 29.0516780926679
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3309.6666666666665,
+      "median": 3312.0,
+      "min": 3289.0,
+      "max": 3325.0,
+      "stdev": 16.800793632048062
+    },
+    "combined_mean": 3310.333333333333,
+    "elapsed": 24.12901020050049
+  },
+  "wheat-carrot-21_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          2
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 3509.6666666666665,
+      "median": 3514.5,
+      "min": 3459.0,
+      "max": 3540.0,
+      "stdev": 28.640297950033037
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3482.1666666666665,
+      "median": 3479.5,
+      "min": 3431.0,
+      "max": 3525.0,
+      "stdev": 32.94490350064281
+    },
+    "combined_mean": 3495.9166666666665,
+    "elapsed": 26.762146711349487
+  },
+  "wheat-carrot-21_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          2
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 3489.1666666666665,
+      "median": 3468.5,
+      "min": 3415.0,
+      "max": 3593.0,
+      "stdev": 78.47143854082621
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3459.1666666666665,
+      "median": 3453.5,
+      "min": 3387.0,
+      "max": 3541.0,
+      "stdev": 67.29165376676863
+    },
+    "combined_mean": 3474.1666666666665,
+    "elapsed": 17.760162830352783
+  },
+  "wheat-carrot-21_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          2
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 3463.1666666666665,
+      "median": 3462.5,
+      "min": 3441.0,
+      "max": 3488.0,
+      "stdev": 21.664871720521834
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3422.3333333333335,
+      "median": 3423.0,
+      "min": 3381.0,
+      "max": 3461.0,
+      "stdev": 38.474233802204125
+    },
+    "combined_mean": 3442.75,
+    "elapsed": 16.977115154266357
+  },
+  "wheat-carrot-21_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          2
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 3464.5,
+      "median": 3453.0,
+      "min": 3348.0,
+      "max": 3586.0,
+      "stdev": 97.39763857507019
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3513.6666666666665,
+      "median": 3512.0,
+      "min": 3478.0,
+      "max": 3575.0,
+      "stdev": 33.07365517548169
+    },
+    "combined_mean": 3489.083333333333,
+    "elapsed": 18.032521963119507
+  },
+  "wheat-carrot-21_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          2
+        ],
+        [
+          "CARROT",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 3388.6666666666665,
+      "median": 3386.0,
+      "min": 3275.0,
+      "max": 3539.0,
+      "stdev": 98.49602360840089
+    },
+    "starter": {
+      "n": 6,
+      "mean": 3385.3333333333335,
+      "median": 3419.0,
+      "min": 3253.0,
+      "max": 3491.0,
+      "stdev": 99.34518944904512
+    },
+    "combined_mean": 3387.0,
+    "elapsed": 19.921269416809082
+  },
+  "wheat-melon-11_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 5517.5,
+      "median": 5522.5,
+      "min": 5502.0,
+      "max": 5527.0,
+      "stdev": 11.77709641634983
+    },
+    "starter": {
+      "n": 6,
+      "mean": 5513.0,
+      "median": 5511.0,
+      "min": 5502.0,
+      "max": 5527.0,
+      "stdev": 11.730302638892145
+    },
+    "combined_mean": 5515.25,
+    "elapsed": 17.548310041427612
+  },
+  "wheat-melon-11_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 6724.0,
+      "median": 6721.0,
+      "min": 6717.0,
+      "max": 6734.0,
+      "stdev": 7.9498427657407165
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6682.5,
+      "median": 6677.5,
+      "min": 6614.0,
+      "max": 6731.0,
+      "stdev": 41.64972989108092
+    },
+    "combined_mean": 6703.25,
+    "elapsed": 15.032554864883423
+  },
+  "wheat-melon-11_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 7642.166666666667,
+      "median": 7658.0,
+      "min": 7574.0,
+      "max": 7690.0,
+      "stdev": 48.852499083124364
+    },
+    "starter": {
+      "n": 6,
+      "mean": 7684.5,
+      "median": 7685.0,
+      "min": 7593.0,
+      "max": 7771.0,
+      "stdev": 56.564122904894404
+    },
+    "combined_mean": 7663.333333333334,
+    "elapsed": 12.717655897140503
+  },
+  "wheat-melon-11_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 6607.666666666667,
+      "median": 6601.0,
+      "min": 6535.0,
+      "max": 6696.0,
+      "stdev": 65.54591266178744
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6561.166666666667,
+      "median": 6579.5,
+      "min": 6480.0,
+      "max": 6626.0,
+      "stdev": 67.50530843323854
+    },
+    "combined_mean": 6584.416666666667,
+    "elapsed": 13.143397569656372
+  },
+  "wheat-melon-11_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 7907.333333333333,
+      "median": 7908.0,
+      "min": 7850.0,
+      "max": 7949.0,
+      "stdev": 34.58708814957782
+    },
+    "starter": {
+      "n": 6,
+      "mean": 7873.5,
+      "median": 7875.5,
+      "min": 7777.0,
+      "max": 8003.0,
+      "stdev": 86.39849535726881
+    },
+    "combined_mean": 7890.416666666666,
+    "elapsed": 12.920944690704346
+  },
+  "wheat-melon-11_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 7178.666666666667,
+      "median": 7175.0,
+      "min": 7092.0,
+      "max": 7286.0,
+      "stdev": 78.57395666928494
+    },
+    "starter": {
+      "n": 6,
+      "mean": 7192.0,
+      "median": 7183.5,
+      "min": 7144.0,
+      "max": 7252.0,
+      "stdev": 48.13730362203517
+    },
+    "combined_mean": 7185.333333333334,
+    "elapsed": 13.097161531448364
+  },
+  "carrot-melon-11_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 5459.0,
+      "median": 5454.0,
+      "min": 5454.0,
+      "max": 5469.0,
+      "stdev": 7.745966692414834
+    },
+    "starter": {
+      "n": 6,
+      "mean": 5455.833333333333,
+      "median": 5451.5,
+      "min": 5436.0,
+      "max": 5482.0,
+      "stdev": 22.27479891416905
+    },
+    "combined_mean": 5457.416666666666,
+    "elapsed": 11.857942581176758
+  },
+  "carrot-melon-11_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 6606.166666666667,
+      "median": 6604.5,
+      "min": 6550.0,
+      "max": 6657.0,
+      "stdev": 43.05074525100195
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6549.333333333333,
+      "median": 6545.0,
+      "min": 6534.0,
+      "max": 6569.0,
+      "stdev": 17.45470328211473
+    },
+    "combined_mean": 6577.75,
+    "elapsed": 12.710505723953247
+  },
+  "carrot-melon-11_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 7515.666666666667,
+      "median": 7509.0,
+      "min": 7470.0,
+      "max": 7575.0,
+      "stdev": 50.749055820445236
+    },
+    "starter": {
+      "n": 6,
+      "mean": 7497.0,
+      "median": 7488.0,
+      "min": 7454.0,
+      "max": 7576.0,
+      "stdev": 51.0646648867884
+    },
+    "combined_mean": 7506.333333333334,
+    "elapsed": 12.687435150146484
+  },
+  "carrot-melon-11_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 6389.0,
+      "median": 6392.0,
+      "min": 6349.0,
+      "max": 6430.0,
+      "stdev": 35.17953950807202
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6439.333333333333,
+      "median": 6447.0,
+      "min": 6345.0,
+      "max": 6494.0,
+      "stdev": 53.15511891310814
+    },
+    "combined_mean": 6414.166666666666,
+    "elapsed": 12.334190845489502
+  },
+  "carrot-melon-11_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 7704.0,
+      "median": 7723.5,
+      "min": 7636.0,
+      "max": 7751.0,
+      "stdev": 46.05648705665685
+    },
+    "starter": {
+      "n": 6,
+      "mean": 7703.333333333333,
+      "median": 7708.0,
+      "min": 7618.0,
+      "max": 7801.0,
+      "stdev": 70.17026910783987
+    },
+    "combined_mean": 7703.666666666666,
+    "elapsed": 11.879746675491333
+  },
+  "carrot-melon-11_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 6976.666666666667,
+      "median": 6976.0,
+      "min": 6888.0,
+      "max": 7107.0,
+      "stdev": 85.5749184438213
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6934.333333333333,
+      "median": 6946.0,
+      "min": 6851.0,
+      "max": 7011.0,
+      "stdev": 78.14516406449388
+    },
+    "combined_mean": 6955.5,
+    "elapsed": 11.394699335098267
+  },
+  "wheat-carrot-melon-111_mt4": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 4
+    },
+    "random": {
+      "n": 6,
+      "mean": 4426.0,
+      "median": 4424.5,
+      "min": 4410.0,
+      "max": 4442.0,
+      "stdev": 10.788883167408942
+    },
+    "starter": {
+      "n": 6,
+      "mean": 4413.666666666667,
+      "median": 4412.5,
+      "min": 4391.0,
+      "max": 4442.0,
+      "stdev": 17.397317800933184
+    },
+    "combined_mean": 4419.833333333334,
+    "elapsed": 10.13540267944336
+  },
+  "wheat-carrot-melon-111_mt8": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 8
+    },
+    "random": {
+      "n": 6,
+      "mean": 5693.333333333333,
+      "median": 5709.0,
+      "min": 5650.0,
+      "max": 5717.0,
+      "stdev": 28.31725033732383
+    },
+    "starter": {
+      "n": 6,
+      "mean": 5677.833333333333,
+      "median": 5678.5,
+      "min": 5647.0,
+      "max": 5717.0,
+      "stdev": 26.947479783212877
+    },
+    "combined_mean": 5685.583333333333,
+    "elapsed": 10.20805835723877
+  },
+  "wheat-carrot-melon-111_mt12": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 12
+    },
+    "random": {
+      "n": 6,
+      "mean": 5086.0,
+      "median": 5096.0,
+      "min": 5014.0,
+      "max": 5132.0,
+      "stdev": 43.53848871975232
+    },
+    "starter": {
+      "n": 6,
+      "mean": 5075.666666666667,
+      "median": 5085.5,
+      "min": 5037.0,
+      "max": 5115.0,
+      "stdev": 29.568000721500713
+    },
+    "combined_mean": 5080.833333333334,
+    "elapsed": 10.009282112121582
+  },
+  "wheat-carrot-melon-111_mt16": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 16
+    },
+    "random": {
+      "n": 6,
+      "mean": 6049.5,
+      "median": 6048.0,
+      "min": 6023.0,
+      "max": 6068.0,
+      "stdev": 16.294170736800325
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6044.666666666667,
+      "median": 6044.5,
+      "min": 6014.0,
+      "max": 6085.0,
+      "stdev": 25.232254490367417
+    },
+    "combined_mean": 6047.083333333334,
+    "elapsed": 10.249662637710571
+  },
+  "wheat-carrot-melon-111_mt20": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 20
+    },
+    "random": {
+      "n": 6,
+      "mean": 6080.833333333333,
+      "median": 6077.5,
+      "min": 5975.0,
+      "max": 6167.0,
+      "stdev": 63.76336461218673
+    },
+    "starter": {
+      "n": 6,
+      "mean": 6082.5,
+      "median": 6069.0,
+      "min": 6047.0,
+      "max": 6133.0,
+      "stdev": 36.40741682679506
+    },
+    "combined_mean": 6081.666666666666,
+    "elapsed": 10.31387734413147
+  },
+  "wheat-carrot-melon-111_mt25": {
+    "config": {
+      "harvest_at": "first",
+      "fertilize": "never",
+      "land": "never",
+      "sell": "dump",
+      "hire": 0,
+      "crop_mix": [
+        [
+          "WHEAT",
+          1
+        ],
+        [
+          "CARROT",
+          1
+        ],
+        [
+          "MELON",
+          1
+        ]
+      ],
+      "max_tiles": 25
+    },
+    "random": {
+      "n": 6,
+      "mean": 5283.5,
+      "median": 5262.0,
+      "min": 5208.0,
+      "max": 5393.0,
+      "stdev": 69.35055875766251
+    },
+    "starter": {
+      "n": 6,
+      "mean": 5265.166666666667,
+      "median": 5270.0,
+      "min": 5215.0,
+      "max": 5298.0,
+      "stdev": 31.371430739873286
+    },
+    "combined_mean": 5274.333333333334,
+    "elapsed": 10.708108186721802
+  }
+}

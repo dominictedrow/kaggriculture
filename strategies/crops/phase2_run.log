@@ -1,0 +1,379 @@
+OpenSpiel exception: Unknown game 'universal_poker'. Available games are:
+2048
+add_noise
+amazons
+amazons_proxy
+ant_foraging_arena
+antichess
+backgammon
+backgammon_proxy
+banqi
+bargaining
+bargaining_proxy
+battleship
+blackjack
+blotto
+breakthrough
+breakthrough_proxy
+bridge
+bridge_arena
+bridge_uncontested_bidding
+cached_tree
+capture_the_flag
+capture_the_flag_proxy
+catch
+chat_game
+checkers
+checkers_proxy
+chess
+chinese_checkers
+cliff_walking
+clobber
+clobber_proxy
+coin_game
+coin_game_arena
+coin_game_proxy
+colored_trails
+connect_four
+connect_four_proxy
+coop_box_pushing
+coop_to_1p
+coordinated_mp
+crazy_eights
+crazyhouse
+cribbage
+crossword
+cursor_go
+dark_chess
+dark_hex
+dark_hex_ir
+dark_hex_proxy
+deep_sea
+dots_and_boxes
+dots_and_boxes_proxy
+dou_dizhu
+efg_game
+einstein_wurfelt_nicht
+euchre
+first_sealed_auction
+gin_rummy
+gin_rummy_proxy
+go
+go_fish
+go_fish_proxy
+go_proxy
+gomoku
+goofspiel
+havannah
+havannah_proxy
+hearts
+hex
+hive
+hive_proxy
+kriegspiel
+kuhn_poker
+laser_tag
+latent_ttt
+leduc_poker
+lewis_signaling
+liars_dice
+liars_dice_ir
+lines_of_action
+lines_of_action_proxy
+maedn
+mancala
+mancala_proxy
+markov_soccer
+markov_soccer_proxy
+matching_pennies_3p
+matrix_bos
+matrix_brps
+matrix_cd
+matrix_coordination
+matrix_mp
+matrix_pd
+matrix_rps
+matrix_rpsw
+matrix_sh
+matrix_shapleys_game
+mfg_crowd_modelling
+mfg_crowd_modelling_2d
+mfg_dynamic_routing
+mfg_garnet
+misere
+mnk
+morpion_solitaire
+negotiation
+negotiation_proxy
+nfg_game
+nim
+nine_mens_morris
+nine_mens_morris_proxy
+normal_form_extensive_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+OpenSpiel exception: Unknown game 'repeated_poker'. Available games are:
+2048
+add_noise
+amazons
+amazons_proxy
+ant_foraging_arena
+antichess
+backgammon
+backgammon_proxy
+banqi
+bargaining
+bargaining_proxy
+battleship
+blackjack
+blotto
+breakthrough
+breakthrough_proxy
+bridge
+bridge_arena
+bridge_uncontested_bidding
+cached_tree
+capture_the_flag
+capture_the_flag_proxy
+catch
+chat_game
+checkers
+checkers_proxy
+chess
+chinese_checkers
+cliff_walking
+clobber
+clobber_proxy
+coin_game
+coin_game_arena
+coin_game_proxy
+colored_trails
+connect_four
+connect_four_proxy
+coop_box_pushing
+coop_to_1p
+coordinated_mp
+crazy_eights
+crazyhouse
+cribbage
+crossword
+cursor_go
+dark_chess
+dark_hex
+dark_hex_ir
+dark_hex_proxy
+deep_sea
+dots_and_boxes
+dots_and_boxes_proxy
+dou_dizhu
+efg_game
+einstein_wurfelt_nicht
+euchre
+first_sealed_auction
+gin_rummy
+gin_rummy_proxy
+go
+go_fish
+go_fish_proxy
+go_proxy
+gomoku
+goofspiel
+havannah
+havannah_proxy
+hearts
+hex
+hive
+hive_proxy
+kriegspiel
+kuhn_poker
+laser_tag
+latent_ttt
+leduc_poker
+lewis_signaling
+liars_dice
+liars_dice_ir
+lines_of_action
+lines_of_action_proxy
+maedn
+mancala
+mancala_proxy
+markov_soccer
+markov_soccer_proxy
+matching_pennies_3p
+matrix_bos
+matrix_brps
+matrix_cd
+matrix_coordination
+matrix_mp
+matrix_pd
+matrix_rps
+matrix_rpsw
+matrix_sh
+matrix_shapleys_game
+mfg_crowd_modelling
+mfg_crowd_modelling_2d
+mfg_dynamic_routing
+mfg_garnet
+misere
+mnk
+morpion_solitaire
+negotiation
+negotiation_proxy
+nfg_game
+nim
+nine_mens_morris
+nine_mens_morris_proxy
+normal_form_extensive_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+Phase 2: 42 configs (from 10 phase-1 survivors)
+[1/42] melon-mono_mt20_harvestmax: combined_mean=800 (random=800, starter=800) [10.8s]
+[2/42] melon-mono_mt50_landasap: combined_mean=6529 (random=6562, starter=6496) [11.0s]
+[3/42] melon-mono_mt50_landasap_hire1: combined_mean=6501 (random=6521, starter=6481) [10.8s]
+[4/42] melon-mono_mt50_landd10: combined_mean=8652 (random=8389, starter=8916) [10.5s]
+[5/42] melon-mono_mt50_landd10_hire1: combined_mean=17748 (random=17755, starter=17741) [12.1s]
+[6/42] melon-mono_mt50_landd8-15-20: combined_mean=8652 (random=8876, starter=8429) [10.3s]
+[7/42] melon-mono_mt50_landd8-15-20_hire1: combined_mean=17741 (random=17741, starter=17741) [12.0s]
+[8/42] melon-mono_mt20_sell('batch', 20): combined_mean=8035 (random=8028, starter=8042) [10.7s]
+[9/42] melon-mono_mt25_harvestmax: combined_mean=753 (random=813, starter=693) [10.4s]
+[10/42] melon-mono_mt25_sell('batch', 20): combined_mean=8002 (random=8015, starter=7988) [10.5s]
+[11/42] melon-mono_mt12_harvestmax: combined_mean=1807 (random=1800, starter=1813) [10.1s]
+[12/42] melon-mono_mt12_sell('batch', 20): combined_mean=8982 (random=8988, starter=8975) [10.4s]
+[13/42] melon-mono_mt16_harvestmax: combined_mean=1427 (random=1427, starter=1427) [10.4s]
+[14/42] melon-mono_mt16_sell('batch', 20): combined_mean=8528 (random=8522, starter=8535) [10.3s]
+[15/42] melon-mono_mt8_harvestmax: combined_mean=2200 (random=2200, starter=2200) [9.9s]
+[16/42] melon-mono_mt8_sell('batch', 20): combined_mean=6974 (random=6974, starter=6974) [10.2s]
+[17/42] wheat-melon-11_mt20_harvestmax: combined_mean=2548 (random=2532, starter=2563) [10.5s]
+[18/42] wheat-melon-11_mt20_harvestmax_fertbonus: combined_mean=1222 (random=1253, starter=1190) [10.4s]
+[19/42] wheat-melon-11_mt50_landasap: combined_mean=3118 (random=3104, starter=3133) [10.7s]
+[20/42] wheat-melon-11_mt50_landasap_hire1: combined_mean=2813 (random=2797, starter=2830) [12.1s]
+[21/42] wheat-melon-11_mt50_landd10: combined_mean=5106 (random=5088, starter=5124) [10.3s]
+[22/42] wheat-melon-11_mt50_landd10_hire1: combined_mean=6348 (random=6330, starter=6365) [11.9s]
+[23/42] wheat-melon-11_mt50_landd8-15-20: combined_mean=5084 (random=5070, starter=5098) [10.6s]
+[24/42] wheat-melon-11_mt50_landd8-15-20_hire1: combined_mean=6057 (random=6097, starter=6018) [12.8s]
+[25/42] wheat-melon-11_mt20_sell('batch', 20): combined_mean=7844 (random=7830, starter=7859) [12.0s]
+[26/42] carrot-melon-11_mt20_harvestmax: combined_mean=2357 (random=2349, starter=2365) [12.0s]
+[27/42] carrot-melon-11_mt20_harvestmax_fertbonus: combined_mean=921 (random=956, starter=887) [12.1s]
+[28/42] carrot-melon-11_mt50_landasap: combined_mean=2761 (random=2768, starter=2755) [12.1s]
+[29/42] carrot-melon-11_mt50_landasap_hire1: combined_mean=2530 (random=2561, starter=2500) [13.2s]
+[30/42] carrot-melon-11_mt50_landd10: combined_mean=4731 (random=4741, starter=4721) [11.9s]
+[31/42] carrot-melon-11_mt50_landd10_hire1: combined_mean=5872 (random=5920, starter=5825) [13.3s]
+[32/42] carrot-melon-11_mt50_landd8-15-20: combined_mean=4733 (random=4745, starter=4721) [11.8s]
+[33/42] carrot-melon-11_mt50_landd8-15-20_hire1: combined_mean=4310 (random=4273, starter=4346) [13.9s]
+[34/42] carrot-melon-11_mt20_sell('batch', 20): combined_mean=7603 (random=7626, starter=7580) [11.4s]
+[35/42] wheat-melon-11_mt12_harvestmax: combined_mean=3019 (random=3000, starter=3038) [9.9s]
+[36/42] wheat-melon-11_mt12_harvestmax_fertbonus: combined_mean=1821 (random=1826, starter=1815) [9.8s]
+[37/42] wheat-melon-11_mt12_sell('batch', 20): combined_mean=7311 (random=7753, starter=6869) [10.1s]
+[38/42] melon-mono_mt4_harvestmax: combined_mean=2600 (random=2600, starter=2600) [8.8s]
+[39/42] melon-mono_mt4_sell('batch', 20): combined_mean=7534 (random=7534, starter=7534) [9.1s]
+[40/42] carrot-melon-11_mt12_harvestmax: combined_mean=3040 (random=3057, starter=3023) [9.9s]
+[41/42] carrot-melon-11_mt12_harvestmax_fertbonus: combined_mean=1736 (random=1795, starter=1677) [10.0s]
+[42/42] carrot-melon-11_mt12_sell('batch', 20): combined_mean=7149 (random=6742, starter=7556) [9.7s]

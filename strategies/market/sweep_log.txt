@@ -1,0 +1,424 @@
+OpenSpiel exception: Unknown game 'universal_poker'. Available games are:
+2048
+add_noise
+amazons
+amazons_proxy
+ant_foraging_arena
+antichess
+backgammon
+backgammon_proxy
+banqi
+bargaining
+bargaining_proxy
+battleship
+blackjack
+blotto
+breakthrough
+breakthrough_proxy
+bridge
+bridge_arena
+bridge_uncontested_bidding
+cached_tree
+capture_the_flag
+capture_the_flag_proxy
+catch
+chat_game
+checkers
+checkers_proxy
+chess
+chinese_checkers
+cliff_walking
+clobber
+clobber_proxy
+coin_game
+coin_game_arena
+coin_game_proxy
+colored_trails
+connect_four
+connect_four_proxy
+coop_box_pushing
+coop_to_1p
+coordinated_mp
+crazy_eights
+crazyhouse
+cribbage
+crossword
+cursor_go
+dark_chess
+dark_hex
+dark_hex_ir
+dark_hex_proxy
+deep_sea
+dots_and_boxes
+dots_and_boxes_proxy
+dou_dizhu
+efg_game
+einstein_wurfelt_nicht
+euchre
+first_sealed_auction
+gin_rummy
+gin_rummy_proxy
+go
+go_fish
+go_fish_proxy
+go_proxy
+gomoku
+goofspiel
+havannah
+havannah_proxy
+hearts
+hex
+hive
+hive_proxy
+kriegspiel
+kuhn_poker
+laser_tag
+latent_ttt
+leduc_poker
+lewis_signaling
+liars_dice
+liars_dice_ir
+lines_of_action
+lines_of_action_proxy
+maedn
+mancala
+mancala_proxy
+markov_soccer
+markov_soccer_proxy
+matching_pennies_3p
+matrix_bos
+matrix_brps
+matrix_cd
+matrix_coordination
+matrix_mp
+matrix_pd
+matrix_rps
+matrix_rpsw
+matrix_sh
+matrix_shapleys_game
+mfg_crowd_modelling
+mfg_crowd_modelling_2d
+mfg_dynamic_routing
+mfg_garnet
+misere
+mnk
+morpion_solitaire
+negotiation
+negotiation_proxy
+nfg_game
+nim
+nine_mens_morris
+nine_mens_morris_proxy
+normal_form_extensive_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+OpenSpiel exception: Unknown game 'repeated_poker'. Available games are:
+2048
+add_noise
+amazons
+amazons_proxy
+ant_foraging_arena
+antichess
+backgammon
+backgammon_proxy
+banqi
+bargaining
+bargaining_proxy
+battleship
+blackjack
+blotto
+breakthrough
+breakthrough_proxy
+bridge
+bridge_arena
+bridge_uncontested_bidding
+cached_tree
+capture_the_flag
+capture_the_flag_proxy
+catch
+chat_game
+checkers
+checkers_proxy
+chess
+chinese_checkers
+cliff_walking
+clobber
+clobber_proxy
+coin_game
+coin_game_arena
+coin_game_proxy
+colored_trails
+connect_four
+connect_four_proxy
+coop_box_pushing
+coop_to_1p
+coordinated_mp
+crazy_eights
+crazyhouse
+cribbage
+crossword
+cursor_go
+dark_chess
+dark_hex
+dark_hex_ir
+dark_hex_proxy
+deep_sea
+dots_and_boxes
+dots_and_boxes_proxy
+dou_dizhu
+efg_game
+einstein_wurfelt_nicht
+euchre
+first_sealed_auction
+gin_rummy
+gin_rummy_proxy
+go
+go_fish
+go_fish_proxy
+go_proxy
+gomoku
+goofspiel
+havannah
+havannah_proxy
+hearts
+hex
+hive
+hive_proxy
+kriegspiel
+kuhn_poker
+laser_tag
+latent_ttt
+leduc_poker
+lewis_signaling
+liars_dice
+liars_dice_ir
+lines_of_action
+lines_of_action_proxy
+maedn
+mancala
+mancala_proxy
+markov_soccer
+markov_soccer_proxy
+matching_pennies_3p
+matrix_bos
+matrix_brps
+matrix_cd
+matrix_coordination
+matrix_mp
+matrix_pd
+matrix_rps
+matrix_rpsw
+matrix_sh
+matrix_shapleys_game
+mfg_crowd_modelling
+mfg_crowd_modelling_2d
+mfg_dynamic_routing
+mfg_garnet
+misere
+mnk
+morpion_solitaire
+negotiation
+negotiation_proxy
+nfg_game
+nim
+nine_mens_morris
+nine_mens_morris_proxy
+normal_form_extensive_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+Total configs: 65
+Screening 65 configs x 2 opponents (n=8, steps=300)...
+  [1/65] wheat_dump                          combined_mean=4181  (13s elapsed)
+  [2/65] wheat_threshold_5                   combined_mean=4158  (26s elapsed)
+  [3/65] wheat_threshold_10                  combined_mean=4165  (39s elapsed)
+  [4/65] wheat_threshold_20                  combined_mean=4192  (53s elapsed)
+  [5/65] wheat_threshold_40                  combined_mean=3454  (66s elapsed)
+  [6/65] wheat_threshold_80                  combined_mean=3402  (80s elapsed)
+  [7/65] wheat_pricegate_10                  combined_mean=4178  (95s elapsed)
+  [8/65] wheat_pricegate_15                  combined_mean=4147  (111s elapsed)
+  [9/65] wheat_pricegate_20                  combined_mean=4224  (160s elapsed)
+  [10/65] wheat_capped_5                      combined_mean=4193  (189s elapsed)
+  [11/65] wheat_capped_15                     combined_mean=4141  (221s elapsed)
+  [12/65] wheat_capped_30                     combined_mean=4202  (250s elapsed)
+  [13/65] wheat_shopscaled_5_2                combined_mean=4167  (273s elapsed)
+  [14/65] carrot_threshold_3                  combined_mean=4089  (297s elapsed)
+  [15/65] carrot_threshold_5                  combined_mean=4080  (322s elapsed)
+  [16/65] carrot_threshold_10                 combined_mean=4202  (359s elapsed)
+  [17/65] carrot_threshold_20                 combined_mean=4159  (383s elapsed)
+  [18/65] carrot_threshold_40                 combined_mean=3295  (410s elapsed)
+  [19/65] carrot_pricegate_15                 combined_mean=4171  (437s elapsed)
+  [20/65] carrot_pricegate_20                 combined_mean=4176  (464s elapsed)
+  [21/65] carrot_pricegate_25                 combined_mean=4159  (491s elapsed)
+  [22/65] carrot_pricegate_30                 combined_mean=4205  (521s elapsed)
+  [23/65] carrot_pricegate_33                 combined_mean=4108  (557s elapsed)
+  [24/65] carrot_capped_1                     combined_mean=4171  (593s elapsed)
+  [25/65] carrot_capped_2                     combined_mean=4154  (624s elapsed)
+  [26/65] carrot_capped_5                     combined_mean=4172  (650s elapsed)
+  [27/65] carrot_capped_10                    combined_mean=4161  (673s elapsed)
+  [28/65] carrot_dayspread_2                  combined_mean=4032  (698s elapsed)
+  [29/65] carrot_dayspread_4                  combined_mean=3878  (716s elapsed)
+  [30/65] carrot_dayspread_7                  combined_mean=3659  (733s elapsed)
+  [31/65] carrot_shopscaled_3_1               combined_mean=4196  (749s elapsed)
+  [32/65] carrot_shopscaled_5_2               combined_mean=4150  (766s elapsed)
+  [33/65] carrot_threshprice_5_20             combined_mean=4083  (783s elapsed)
+  [34/65] carrot_threshprice_10_25            combined_mean=4188  (799s elapsed)
+  [35/65] carrot_threshprice_10_20            combined_mean=4176  (815s elapsed)
+  [36/65] carrot_gatehours_4                  combined_mean=4184  (830s elapsed)
+  [37/65] carrot_hoard                        combined_mean=3317  (844s elapsed)
+  [38/65] combo_dump_x_dump                   combined_mean=4169  (858s elapsed)
+  [39/65] combo_dump_x_threshold10            combined_mean=4183  (871s elapsed)
+  [40/65] combo_dump_x_pricegate25            combined_mean=4148  (884s elapsed)
+  [41/65] combo_dump_x_pricegate30            combined_mean=4152  (897s elapsed)
+  [42/65] combo_dump_x_capped5                combined_mean=4173  (910s elapsed)
+  [43/65] combo_dump_x_dayspread4             combined_mean=3886  (923s elapsed)
+  [44/65] combo_dump_x_shopscaled_3_1         combined_mean=4141  (936s elapsed)
+  [45/65] combo_dump_x_threshprice_10_25      combined_mean=4184  (949s elapsed)
+  [46/65] combo_threshold20_x_dump            combined_mean=4216  (962s elapsed)
+  [47/65] combo_threshold20_x_threshold10     combined_mean=4229  (976s elapsed)
+  [48/65] combo_threshold20_x_pricegate25     combined_mean=4240  (989s elapsed)
+  [49/65] combo_threshold20_x_pricegate30     combined_mean=4235  (1002s elapsed)
+  [50/65] combo_threshold20_x_capped5         combined_mean=4204  (1015s elapsed)
+  [51/65] combo_threshold20_x_dayspread4      combined_mean=3939  (1028s elapsed)
+  [52/65] combo_threshold20_x_shopscaled_3_1  combined_mean=4208  (1041s elapsed)
+  [53/65] combo_threshold20_x_threshprice_10_25 combined_mean=4231  (1055s elapsed)
+  [54/65] combo_capped15_x_dump               combined_mean=4175  (1068s elapsed)
+  [55/65] combo_capped15_x_threshold10        combined_mean=4134  (1081s elapsed)
+  [56/65] combo_capped15_x_pricegate25        combined_mean=4169  (1094s elapsed)
+  [57/65] combo_capped15_x_pricegate30        combined_mean=4182  (1107s elapsed)
+  [58/65] combo_capped15_x_capped5            combined_mean=4186  (1121s elapsed)
+  [59/65] combo_capped15_x_dayspread4         combined_mean=3834  (1134s elapsed)
+  [60/65] combo_capped15_x_shopscaled_3_1     combined_mean=4142  (1147s elapsed)
+  [61/65] combo_capped15_x_threshprice_10_25  combined_mean=4172  (1160s elapsed)
+  [62/65] arb_wheat_only                      combined_mean=4161  (1174s elapsed)
+  [63/65] arb_fert_only                       combined_mean=4179  (1189s elapsed)
+  [64/65] arb_both                            combined_mean=4170  (1204s elapsed)
+  [65/65] arb_wheat_aggressive                combined_mean=4161  (1219s elapsed)
+
+Confirming top 20 configs (n=30 x 2 opponents, steps=720)...
+  [1/20] combo_threshold20_x_pricegate25     combined_mean=5370 (129s elapsed)
+  [2/20] combo_threshold20_x_pricegate30     combined_mean=5310 (245s elapsed)
+  [3/20] combo_threshold20_x_threshprice_10_25 combined_mean=5384 (383s elapsed)
+  [4/20] combo_threshold20_x_threshold10     combined_mean=5350 (514s elapsed)
+  [5/20] wheat_pricegate_20                  combined_mean=5971 (650s elapsed)
+  [6/20] combo_threshold20_x_dump            combined_mean=5337 (787s elapsed)
+  [7/20] combo_threshold20_x_shopscaled_3_1  combined_mean=5319 (910s elapsed)
+  [8/20] carrot_pricegate_30                 combined_mean=5937 (1031s elapsed)
+  [9/20] combo_threshold20_x_capped5         combined_mean=5355 (1152s elapsed)
+  [10/20] carrot_threshold_10                 combined_mean=5965 (1272s elapsed)
+  [11/20] wheat_capped_30                     combined_mean=5930 (1393s elapsed)
+  [12/20] carrot_shopscaled_3_1               combined_mean=5937 (1513s elapsed)
+  [13/20] wheat_capped_5                      combined_mean=5928 (1633s elapsed)
+  [14/20] wheat_threshold_20                  combined_mean=5331 (1746s elapsed)
+  [15/20] carrot_threshprice_10_25            combined_mean=5932 (1873s elapsed)
+  [16/20] combo_capped15_x_capped5            combined_mean=5888 (2001s elapsed)
+  [17/20] carrot_gatehours_4                  combined_mean=5923 (2118s elapsed)
+  [18/20] combo_dump_x_threshprice_10_25      combined_mean=5958 (2237s elapsed)
+  [19/20] combo_dump_x_threshold10            combined_mean=5937 (2356s elapsed)

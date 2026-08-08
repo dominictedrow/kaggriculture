@@ -1,0 +1,502 @@
+[
+  {
+    "label": "A_hire_flat4_noland",
+    "base_name": "A_hire_flat4_noland",
+    "hire": "flat4",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 12301.266666666666,
+      "median": 11675.0,
+      "min": 10931.0,
+      "max": 14909.0,
+      "stdev": 1423.661475001097
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 12012.366666666667,
+      "median": 11238.0,
+      "min": 10800.0,
+      "max": 15062.0,
+      "stdev": 1278.1208318932684
+    },
+    "combined_score": 12156.816666666666,
+    "elapsed_sec": 334.58258843421936
+  },
+  {
+    "label": "A_hire_fibcap3_noland",
+    "base_name": "A_hire_fibcap3_noland",
+    "hire": "fibcap3",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 12008.1,
+      "median": 11165.0,
+      "min": 10800.0,
+      "max": 15062.0,
+      "stdev": 1238.102423204489
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 12066.066666666668,
+      "median": 11302.0,
+      "min": 10825.0,
+      "max": 15062.0,
+      "stdev": 1288.3319055470818
+    },
+    "combined_score": 12037.083333333334,
+    "elapsed_sec": 372.54023003578186
+  },
+  {
+    "label": "A_hire_fibcap5_noland",
+    "base_name": "A_hire_fibcap5_noland",
+    "hire": "fibcap5",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 11780.266666666666,
+      "median": 11479.0,
+      "min": 10288.0,
+      "max": 14294.0,
+      "stdev": 1399.3754994660108
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 12104.3,
+      "median": 11963.5,
+      "min": 10219.0,
+      "max": 14212.0,
+      "stdev": 1382.6885392421982
+    },
+    "combined_score": 11942.283333333333,
+    "elapsed_sec": 391.1085913181305
+  },
+  {
+    "label": "A_hire_flat5_noland",
+    "base_name": "A_hire_flat5_noland",
+    "hire": "flat5",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 11961.033333333333,
+      "median": 11636.5,
+      "min": 10146.0,
+      "max": 14353.0,
+      "stdev": 1376.626172764498
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 11559.333333333334,
+      "median": 10821.0,
+      "min": 10079.0,
+      "max": 14294.0,
+      "stdev": 1454.4287735985095
+    },
+    "combined_score": 11760.183333333334,
+    "elapsed_sec": 388.47013211250305
+  },
+  {
+    "label": "A_hire_ramp_0_10_0_6_noland",
+    "base_name": "A_hire_ramp_0_10_0_6_noland",
+    "hire": "ramp_0_10_0_6",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 11097.466666666667,
+      "median": 11285.0,
+      "min": 8850.0,
+      "max": 13439.0,
+      "stdev": 1566.500310561254
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 11083.233333333334,
+      "median": 11316.0,
+      "min": 8951.0,
+      "max": 13357.0,
+      "stdev": 1491.848695372643
+    },
+    "combined_score": 11090.35,
+    "elapsed_sec": 317.4363224506378
+  },
+  {
+    "label": "C_flat4_util80",
+    "base_name": "C_flat4_util80",
+    "hire": "flat4",
+    "land": "util80",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 10827.2,
+      "median": 10583.5,
+      "min": 8539.0,
+      "max": 13450.0,
+      "stdev": 1069.8854402095646
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 11346.2,
+      "median": 11280.0,
+      "min": 10083.0,
+      "max": 13623.0,
+      "stdev": 1069.2530876818835
+    },
+    "combined_score": 11086.7,
+    "elapsed_sec": 386.77709317207336
+  },
+  {
+    "label": "A_hire_flat6_noland",
+    "base_name": "A_hire_flat6_noland",
+    "hire": "flat6",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 11273.466666666667,
+      "median": 11428.0,
+      "min": 9535.0,
+      "max": 13476.0,
+      "stdev": 1189.5190779393197
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 10815.833333333334,
+      "median": 10528.5,
+      "min": 9451.0,
+      "max": 13360.0,
+      "stdev": 1168.4991282169099
+    },
+    "combined_score": 11044.650000000001,
+    "elapsed_sec": 341.3120105266571
+  },
+  {
+    "label": "A_hire_fibcap13_noland",
+    "base_name": "A_hire_fibcap13_noland",
+    "hire": "fibcap13",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 10841.5,
+      "median": 10152.5,
+      "min": 9649.0,
+      "max": 13550.0,
+      "stdev": 1369.9766861847158
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 11017.1,
+      "median": 10133.5,
+      "min": 9649.0,
+      "max": 13673.0,
+      "stdev": 1418.0440718310458
+    },
+    "combined_score": 10929.3,
+    "elapsed_sec": 370.102756023407
+  },
+  {
+    "label": "E_flat8_noland_crowding",
+    "base_name": "E_flat8_noland_crowding",
+    "hire": "flat8",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 10819.766666666666,
+      "median": 10236.5,
+      "min": 9455.0,
+      "max": 13445.0,
+      "stdev": 1406.1379900729646
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 10771.633333333333,
+      "median": 10690.5,
+      "min": 9408.0,
+      "max": 12639.0,
+      "stdev": 1006.4855030332488
+    },
+    "combined_score": 10795.7,
+    "elapsed_sec": 211.86120653152466
+  },
+  {
+    "label": "A_hire_flat8_noland",
+    "base_name": "A_hire_flat8_noland",
+    "hire": "flat8",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 10732.733333333334,
+      "median": 10034.5,
+      "min": 9234.0,
+      "max": 13445.0,
+      "stdev": 1482.3895651914531
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 10580.533333333333,
+      "median": 9927.0,
+      "min": 9455.0,
+      "max": 13376.0,
+      "stdev": 1296.7523820027805
+    },
+    "combined_score": 10656.633333333333,
+    "elapsed_sec": 234.14085125923157
+  },
+  {
+    "label": "A_hire_flat3_noland",
+    "base_name": "A_hire_flat3_noland",
+    "hire": "flat3",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 10160.433333333332,
+      "median": 10286.0,
+      "min": 8429.0,
+      "max": 11794.0,
+      "stdev": 990.3010926092066
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 10478.133333333333,
+      "median": 10431.0,
+      "min": 8612.0,
+      "max": 11968.0,
+      "stdev": 949.975452798408
+    },
+    "combined_score": 10319.283333333333,
+    "elapsed_sec": 351.0236690044403
+  },
+  {
+    "label": "A_hire_day5_2_noland",
+    "base_name": "A_hire_day5_2_noland",
+    "hire": "day5_2",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9857.866666666667,
+      "median": 10135.5,
+      "min": 7421.0,
+      "max": 11350.0,
+      "stdev": 1026.4312037793638
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9803.9,
+      "median": 10107.5,
+      "min": 7470.0,
+      "max": 11262.0,
+      "stdev": 1183.313621820609
+    },
+    "combined_score": 9830.883333333333,
+    "elapsed_sec": 335.5920376777649
+  },
+  {
+    "label": "A_hire_scaleland2_noland",
+    "base_name": "A_hire_scaleland2_noland",
+    "hire": "scaleland2",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9538.4,
+      "median": 9703.0,
+      "min": 7187.0,
+      "max": 10872.0,
+      "stdev": 942.9037907552868
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9585.6,
+      "median": 10067.5,
+      "min": 7313.0,
+      "max": 11059.0,
+      "stdev": 1062.9585777117725
+    },
+    "combined_score": 9562.0,
+    "elapsed_sec": 377.2874209880829
+  },
+  {
+    "label": "A_hire_fibcap1_noland",
+    "base_name": "A_hire_fibcap1_noland",
+    "hire": "fibcap1",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9668.066666666668,
+      "median": 9625.0,
+      "min": 7540.0,
+      "max": 11107.0,
+      "stdev": 842.6332671978396
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9302.733333333334,
+      "median": 9390.0,
+      "min": 7313.0,
+      "max": 10713.0,
+      "stdev": 982.0364461715234
+    },
+    "combined_score": 9485.400000000001,
+    "elapsed_sec": 208.4693009853363
+  },
+  {
+    "label": "C_flat2_util90",
+    "base_name": "C_flat2_util90",
+    "hire": "flat2",
+    "land": "util90",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9403.7,
+      "median": 9421.5,
+      "min": 7313.0,
+      "max": 11036.0,
+      "stdev": 998.5885953477641
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9492.033333333333,
+      "median": 9499.0,
+      "min": 8042.0,
+      "max": 11100.0,
+      "stdev": 867.803866420698
+    },
+    "combined_score": 9447.866666666667,
+    "elapsed_sec": 204.7796926498413
+  },
+  {
+    "label": "A_hire_money2k_2_noland",
+    "base_name": "A_hire_money2k_2_noland",
+    "hire": "money2k_2",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9459.766666666666,
+      "median": 9405.5,
+      "min": 7551.0,
+      "max": 10639.0,
+      "stdev": 777.7358244569156
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9393.766666666666,
+      "median": 9546.5,
+      "min": 7785.0,
+      "max": 10778.0,
+      "stdev": 785.4622484105528
+    },
+    "combined_score": 9426.766666666666,
+    "elapsed_sec": 285.91266655921936
+  },
+  {
+    "label": "A_hire_day0_2_noland",
+    "base_name": "A_hire_day0_2_noland",
+    "hire": "day0_2",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9289.4,
+      "median": 9287.5,
+      "min": 7393.0,
+      "max": 10974.0,
+      "stdev": 978.1170721833618
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9431.933333333332,
+      "median": 9549.0,
+      "min": 7500.0,
+      "max": 10862.0,
+      "stdev": 1031.5277231747875
+    },
+    "combined_score": 9360.666666666666,
+    "elapsed_sec": 280.06446504592896
+  },
+  {
+    "label": "A_hire_flat2_noland",
+    "base_name": "A_hire_flat2_noland",
+    "hire": "flat2",
+    "land": "never",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 9376.5,
+      "median": 9389.0,
+      "min": 7316.0,
+      "max": 10911.0,
+      "stdev": 985.3644433441348
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 9144.766666666666,
+      "median": 8933.0,
+      "min": 7313.0,
+      "max": 11528.0,
+      "stdev": 1047.97840473056
+    },
+    "combined_score": 9260.633333333333,
+    "elapsed_sec": 293.01943469047546
+  },
+  {
+    "label": "E_flat4_land_day14",
+    "base_name": "E_flat4_land_day14",
+    "hire": "flat4",
+    "land": "day14",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 5340.333333333333,
+      "median": 4808.5,
+      "min": 3739.0,
+      "max": 8250.0,
+      "stdev": 1357.1702897581788
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 5477.466666666666,
+      "median": 5133.0,
+      "min": 4070.0,
+      "max": 8023.0,
+      "stdev": 1283.9759298778724
+    },
+    "combined_score": 5408.9,
+    "elapsed_sec": 381.6426646709442
+  },
+  {
+    "label": "C_fibcap5_money6000",
+    "base_name": "C_fibcap5_money6000",
+    "hire": "fibcap5",
+    "land": "money6000",
+    "allocation": "stripe",
+    "vs_random": {
+      "n": 30,
+      "mean": 3955.5,
+      "median": 3508.5,
+      "min": 2364.0,
+      "max": 6185.0,
+      "stdev": 1122.4657816764316
+    },
+    "vs_starter": {
+      "n": 30,
+      "mean": 3810.1666666666665,
+      "median": 3419.0,
+      "min": 2592.0,
+      "max": 6009.0,
+      "stdev": 1117.7575174500469
+    },
+    "combined_score": 3882.833333333333,
+    "elapsed_sec": 327.14056849479675
+  }
+]

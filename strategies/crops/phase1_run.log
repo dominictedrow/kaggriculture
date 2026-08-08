@@ -1,0 +1,385 @@
+OpenSpiel exception: Unknown game 'universal_poker'. Available games are:
+2048
+add_noise
+amazons
+amazons_proxy
+ant_foraging_arena
+antichess
+backgammon
+backgammon_proxy
+banqi
+bargaining
+bargaining_proxy
+battleship
+blackjack
+blotto
+breakthrough
+breakthrough_proxy
+bridge
+bridge_arena
+bridge_uncontested_bidding
+cached_tree
+capture_the_flag
+capture_the_flag_proxy
+catch
+chat_game
+checkers
+checkers_proxy
+chess
+chinese_checkers
+cliff_walking
+clobber
+clobber_proxy
+coin_game
+coin_game_arena
+coin_game_proxy
+colored_trails
+connect_four
+connect_four_proxy
+coop_box_pushing
+coop_to_1p
+coordinated_mp
+crazy_eights
+crazyhouse
+cribbage
+crossword
+cursor_go
+dark_chess
+dark_hex
+dark_hex_ir
+dark_hex_proxy
+deep_sea
+dots_and_boxes
+dots_and_boxes_proxy
+dou_dizhu
+efg_game
+einstein_wurfelt_nicht
+euchre
+first_sealed_auction
+gin_rummy
+gin_rummy_proxy
+go
+go_fish
+go_fish_proxy
+go_proxy
+gomoku
+goofspiel
+havannah
+havannah_proxy
+hearts
+hex
+hive
+hive_proxy
+kriegspiel
+kuhn_poker
+laser_tag
+latent_ttt
+leduc_poker
+lewis_signaling
+liars_dice
+liars_dice_ir
+lines_of_action
+lines_of_action_proxy
+maedn
+mancala
+mancala_proxy
+markov_soccer
+markov_soccer_proxy
+matching_pennies_3p
+matrix_bos
+matrix_brps
+matrix_cd
+matrix_coordination
+matrix_mp
+matrix_pd
+matrix_rps
+matrix_rpsw
+matrix_sh
+matrix_shapleys_game
+mfg_crowd_modelling
+mfg_crowd_modelling_2d
+mfg_dynamic_routing
+mfg_garnet
+misere
+mnk
+morpion_solitaire
+negotiation
+negotiation_proxy
+nfg_game
+nim
+nine_mens_morris
+nine_mens_morris_proxy
+normal_form_extensive_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+OpenSpiel exception: Unknown game 'repeated_poker'. Available games are:
+2048
+add_noise
+amazons
+amazons_proxy
+ant_foraging_arena
+antichess
+backgammon
+backgammon_proxy
+banqi
+bargaining
+bargaining_proxy
+battleship
+blackjack
+blotto
+breakthrough
+breakthrough_proxy
+bridge
+bridge_arena
+bridge_uncontested_bidding
+cached_tree
+capture_the_flag
+capture_the_flag_proxy
+catch
+chat_game
+checkers
+checkers_proxy
+chess
+chinese_checkers
+cliff_walking
+clobber
+clobber_proxy
+coin_game
+coin_game_arena
+coin_game_proxy
+colored_trails
+connect_four
+connect_four_proxy
+coop_box_pushing
+coop_to_1p
+coordinated_mp
+crazy_eights
+crazyhouse
+cribbage
+crossword
+cursor_go
+dark_chess
+dark_hex
+dark_hex_ir
+dark_hex_proxy
+deep_sea
+dots_and_boxes
+dots_and_boxes_proxy
+dou_dizhu
+efg_game
+einstein_wurfelt_nicht
+euchre
+first_sealed_auction
+gin_rummy
+gin_rummy_proxy
+go
+go_fish
+go_fish_proxy
+go_proxy
+gomoku
+goofspiel
+havannah
+havannah_proxy
+hearts
+hex
+hive
+hive_proxy
+kriegspiel
+kuhn_poker
+laser_tag
+latent_ttt
+leduc_poker
+lewis_signaling
+liars_dice
+liars_dice_ir
+lines_of_action
+lines_of_action_proxy
+maedn
+mancala
+mancala_proxy
+markov_soccer
+markov_soccer_proxy
+matching_pennies_3p
+matrix_bos
+matrix_brps
+matrix_cd
+matrix_coordination
+matrix_mp
+matrix_pd
+matrix_rps
+matrix_rpsw
+matrix_sh
+matrix_shapleys_game
+mfg_crowd_modelling
+mfg_crowd_modelling_2d
+mfg_dynamic_routing
+mfg_garnet
+misere
+mnk
+morpion_solitaire
+negotiation
+negotiation_proxy
+nfg_game
+nim
+nine_mens_morris
+nine_mens_morris_proxy
+normal_form_extensive_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+Phase 1: 48 configs
+[1/48] wheat-mono_mt4: combined_mean=3304 (random=3299, starter=3310) [9.6s]
+[2/48] wheat-mono_mt8: combined_mean=3538 (random=3504, starter=3571) [10.2s]
+[3/48] wheat-mono_mt12: combined_mean=3584 (random=3602, starter=3567) [10.3s]
+[4/48] wheat-mono_mt16: combined_mean=3469 (random=3473, starter=3465) [10.5s]
+[5/48] wheat-mono_mt20: combined_mean=3520 (random=3523, starter=3517) [12.2s]
+[6/48] wheat-mono_mt25: combined_mean=3464 (random=3462, starter=3467) [11.3s]
+[7/48] carrot-mono_mt4: combined_mean=3210 (random=3218, starter=3201) [14.0s]
+[8/48] carrot-mono_mt8: combined_mean=3295 (random=3290, starter=3299) [22.0s]
+[9/48] carrot-mono_mt12: combined_mean=3307 (random=3398, starter=3217) [28.8s]
+[10/48] carrot-mono_mt16: combined_mean=3122 (random=3146, starter=3098) [37.9s]
+[11/48] carrot-mono_mt20: combined_mean=3192 (random=3206, starter=3179) [35.0s]
+[12/48] carrot-mono_mt25: combined_mean=3100 (random=3091, starter=3108) [17.8s]
+[13/48] melon-mono_mt4: combined_mean=7534 (random=7534, starter=7534) [16.3s]
+[14/48] melon-mono_mt8: combined_mean=10687 (random=10687, starter=10687) [15.7s]
+[15/48] melon-mono_mt12: combined_mean=11188 (random=11194, starter=11181) [17.2s]
+[16/48] melon-mono_mt16: combined_mean=10721 (random=10714, starter=10728) [18.0s]
+[17/48] melon-mono_mt20: combined_mean=11462 (random=11469, starter=11456) [22.9s]
+[18/48] melon-mono_mt25: combined_mean=11402 (random=11389, starter=11416) [24.1s]
+[19/48] wheat-carrot-11_mt4: combined_mean=3278 (random=3287, starter=3270) [31.8s]
+[20/48] wheat-carrot-11_mt8: combined_mean=3444 (random=3460, starter=3427) [29.2s]
+[21/48] wheat-carrot-11_mt12: combined_mean=3485 (random=3489, starter=3481) [25.8s]
+[22/48] wheat-carrot-11_mt16: combined_mean=3394 (random=3405, starter=3383) [37.4s]
+[23/48] wheat-carrot-11_mt20: combined_mean=3377 (random=3379, starter=3376) [38.1s]
+[24/48] wheat-carrot-11_mt25: combined_mean=3350 (random=3403, starter=3298) [22.1s]
+[25/48] wheat-carrot-21_mt4: combined_mean=3310 (random=3311, starter=3310) [24.1s]
+[26/48] wheat-carrot-21_mt8: combined_mean=3496 (random=3510, starter=3482) [26.8s]
+[27/48] wheat-carrot-21_mt12: combined_mean=3474 (random=3489, starter=3459) [17.8s]
+[28/48] wheat-carrot-21_mt16: combined_mean=3443 (random=3463, starter=3422) [17.0s]
+[29/48] wheat-carrot-21_mt20: combined_mean=3489 (random=3464, starter=3514) [18.0s]
+[30/48] wheat-carrot-21_mt25: combined_mean=3387 (random=3389, starter=3385) [19.9s]
+[31/48] wheat-melon-11_mt4: combined_mean=5515 (random=5518, starter=5513) [17.5s]
+[32/48] wheat-melon-11_mt8: combined_mean=6703 (random=6724, starter=6682) [15.0s]
+[33/48] wheat-melon-11_mt12: combined_mean=7663 (random=7642, starter=7684) [12.7s]
+[34/48] wheat-melon-11_mt16: combined_mean=6584 (random=6608, starter=6561) [13.1s]
+[35/48] wheat-melon-11_mt20: combined_mean=7890 (random=7907, starter=7874) [12.9s]
+[36/48] wheat-melon-11_mt25: combined_mean=7185 (random=7179, starter=7192) [13.1s]
+[37/48] carrot-melon-11_mt4: combined_mean=5457 (random=5459, starter=5456) [11.9s]
+[38/48] carrot-melon-11_mt8: combined_mean=6578 (random=6606, starter=6549) [12.7s]
+[39/48] carrot-melon-11_mt12: combined_mean=7506 (random=7516, starter=7497) [12.7s]
+[40/48] carrot-melon-11_mt16: combined_mean=6414 (random=6389, starter=6439) [12.3s]
+[41/48] carrot-melon-11_mt20: combined_mean=7704 (random=7704, starter=7703) [11.9s]
+[42/48] carrot-melon-11_mt25: combined_mean=6956 (random=6977, starter=6934) [11.4s]
+[43/48] wheat-carrot-melon-111_mt4: combined_mean=4420 (random=4426, starter=4414) [10.1s]
+[44/48] wheat-carrot-melon-111_mt8: combined_mean=5686 (random=5693, starter=5678) [10.2s]
+[45/48] wheat-carrot-melon-111_mt12: combined_mean=5081 (random=5086, starter=5076) [10.0s]
+[46/48] wheat-carrot-melon-111_mt16: combined_mean=6047 (random=6050, starter=6045) [10.2s]
+[47/48] wheat-carrot-melon-111_mt20: combined_mean=6082 (random=6081, starter=6082) [10.3s]
+[48/48] wheat-carrot-melon-111_mt25: combined_mean=5274 (random=5284, starter=5265) [10.7s]

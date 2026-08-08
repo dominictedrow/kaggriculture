@@ -1,0 +1,1461 @@
+{
+  "mix_c4s2_feed-daily_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "daily",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 7881.666666666667,
+        "median": 7990.0,
+        "min": 7287.0,
+        "max": 8243.0,
+        "stdev": 374.73332740319034
+      },
+      "starter": {
+        "n": 6,
+        "mean": 7893.833333333333,
+        "median": 8003.5,
+        "min": 7364.0,
+        "max": 8342.0,
+        "stdev": 404.3535169460835
+      }
+    }
+  },
+  "mix_c4s2_feed-alternate_care-always": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "always"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11655.333333333334,
+        "median": 12319.0,
+        "min": 9525.0,
+        "max": 12971.0,
+        "stdev": 1603.7567978551695
+      },
+      "starter": {
+        "n": 6,
+        "mean": 10968.333333333334,
+        "median": 10915.5,
+        "min": 9380.0,
+        "max": 12992.0,
+        "stdev": 1646.8562374010266
+      }
+    }
+  },
+  "mix_c4s2_feed-alternate_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11130.833333333334,
+        "median": 11210.0,
+        "min": 10533.0,
+        "max": 11633.0,
+        "stdev": 510.6405454590016
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11057.666666666666,
+        "median": 11220.0,
+        "min": 9742.0,
+        "max": 11652.0,
+        "stdev": 676.0706077523757
+      }
+    }
+  },
+  "mix_c3s3_feed-daily_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "feed_mode": "daily",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 8687.666666666666,
+        "median": 8718.5,
+        "min": 8256.0,
+        "max": 9180.0,
+        "stdev": 374.12226165608837
+      },
+      "starter": {
+        "n": 6,
+        "mean": 8663.833333333334,
+        "median": 8732.5,
+        "min": 8185.0,
+        "max": 9165.0,
+        "stdev": 337.03733719970353
+      }
+    }
+  },
+  "mix_c3s3_feed-alternate_care-always": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "always"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11016.166666666666,
+        "median": 11454.5,
+        "min": 9612.0,
+        "max": 11986.0,
+        "stdev": 1029.5162779998511
+      },
+      "starter": {
+        "n": 6,
+        "mean": 10678.166666666666,
+        "median": 10779.5,
+        "min": 9327.0,
+        "max": 11520.0,
+        "stdev": 760.4733832729892
+      }
+    }
+  },
+  "mix_c3s3_feed-alternate_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 10898.666666666666,
+        "median": 10794.0,
+        "min": 10638.0,
+        "max": 11305.0,
+        "stdev": 281.4794249437544
+      },
+      "starter": {
+        "n": 6,
+        "mean": 10836.0,
+        "median": 10827.0,
+        "min": 10493.0,
+        "max": 11103.0,
+        "stdev": 237.64174717418655
+      }
+    }
+  },
+  "cow6_feed-daily_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "feed_mode": "daily",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 8580.166666666666,
+        "median": 8577.0,
+        "min": 7783.0,
+        "max": 9111.0,
+        "stdev": 472.4258319214421
+      },
+      "starter": {
+        "n": 6,
+        "mean": 8605.333333333334,
+        "median": 8681.0,
+        "min": 7909.0,
+        "max": 9139.0,
+        "stdev": 430.60964534792606
+      }
+    }
+  },
+  "cow6_feed-alternate_care-always": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "always"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 13443.166666666666,
+        "median": 13100.5,
+        "min": 12697.0,
+        "max": 14628.0,
+        "stdev": 849.2767314996136
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11648.333333333334,
+        "median": 11802.5,
+        "min": 9652.0,
+        "max": 13532.0,
+        "stdev": 1999.490401744071
+      }
+    }
+  },
+  "cow6_feed-alternate_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11034.166666666666,
+        "median": 11025.5,
+        "min": 10372.0,
+        "max": 11713.0,
+        "stdev": 710.3045590918495
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11692.0,
+        "median": 11635.5,
+        "min": 11424.0,
+        "max": 12103.0,
+        "stdev": 262.465235793238
+      }
+    }
+  },
+  "mix_c2s2_feed-daily_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "daily",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 7722.5,
+        "median": 7660.5,
+        "min": 7471.0,
+        "max": 8096.0,
+        "stdev": 221.6815283238547
+      },
+      "starter": {
+        "n": 6,
+        "mean": 7557.333333333333,
+        "median": 7526.5,
+        "min": 7386.0,
+        "max": 7799.0,
+        "stdev": 171.49771621414283
+      }
+    }
+  },
+  "mix_c2s2_feed-alternate_care-always": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "always"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 12772.5,
+        "median": 12821.0,
+        "min": 12260.0,
+        "max": 13376.0,
+        "stdev": 440.6802695832887
+      },
+      "starter": {
+        "n": 6,
+        "mean": 12401.833333333334,
+        "median": 12398.5,
+        "min": 11728.0,
+        "max": 13262.0,
+        "stdev": 645.1444541082769
+      }
+    }
+  },
+  "mix_c2s2_feed-alternate_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 8877.666666666666,
+        "median": 8910.5,
+        "min": 8588.0,
+        "max": 9208.0,
+        "stdev": 220.77197889828923
+      },
+      "starter": {
+        "n": 6,
+        "mean": 8817.166666666666,
+        "median": 8809.0,
+        "min": 8636.0,
+        "max": 9084.0,
+        "stdev": 183.51503117365255
+      }
+    }
+  },
+  "mix_g2c2s2_feed-daily_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "GOOSE",
+          2
+        ],
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "daily",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 7525.166666666667,
+        "median": 7491.5,
+        "min": 7216.0,
+        "max": 7803.0,
+        "stdev": 232.50756260101878
+      },
+      "starter": {
+        "n": 6,
+        "mean": 7607.5,
+        "median": 7633.5,
+        "min": 7456.0,
+        "max": 7778.0,
+        "stdev": 127.97460685620409
+      }
+    }
+  },
+  "mix_g2c2s2_feed-alternate_care-always": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "GOOSE",
+          2
+        ],
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "always"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 9349.166666666666,
+        "median": 9341.5,
+        "min": 9027.0,
+        "max": 9781.0,
+        "stdev": 279.9824399255544
+      },
+      "starter": {
+        "n": 6,
+        "mean": 9222.0,
+        "median": 9251.5,
+        "min": 8527.0,
+        "max": 9842.0,
+        "stdev": 539.9325883848835
+      }
+    }
+  },
+  "mix_g2c2s2_feed-alternate_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "GOOSE",
+          2
+        ],
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 8067.5,
+        "median": 8099.5,
+        "min": 7863.0,
+        "max": 8163.0,
+        "stdev": 105.24020144412495
+      },
+      "starter": {
+        "n": 6,
+        "mean": 8058.833333333333,
+        "median": 8105.0,
+        "min": 7835.0,
+        "max": 8189.0,
+        "stdev": 138.4607044134424
+      }
+    }
+  },
+  "sheep4_feed-daily_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "SHEEP",
+          4
+        ]
+      ],
+      "feed_mode": "daily",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 7451.333333333333,
+        "median": 7390.0,
+        "min": 7352.0,
+        "max": 7757.0,
+        "stdev": 155.17946599555842
+      },
+      "starter": {
+        "n": 6,
+        "mean": 7576.333333333333,
+        "median": 7541.0,
+        "min": 7333.0,
+        "max": 7882.0,
+        "stdev": 198.88254490192614
+      }
+    }
+  },
+  "sheep4_feed-alternate_care-always": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "SHEEP",
+          4
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "always"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 10942.5,
+        "median": 10871.5,
+        "min": 10824.0,
+        "max": 11354.0,
+        "stdev": 203.89188311455658
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11195.666666666666,
+        "median": 11103.5,
+        "min": 10865.0,
+        "max": 11881.0,
+        "stdev": 406.3159690027783
+      }
+    }
+  },
+  "sheep4_feed-alternate_care-never": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "SHEEP",
+          4
+        ]
+      ],
+      "feed_mode": "alternate",
+      "care_mode": "never"
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 8819.0,
+        "median": 8826.5,
+        "min": 8592.0,
+        "max": 9025.0,
+        "stdev": 198.55377105459368
+      },
+      "starter": {
+        "n": 6,
+        "mean": 8753.5,
+        "median": 8655.5,
+        "min": 8602.0,
+        "max": 9008.0,
+        "stdev": 194.065710520947
+      }
+    }
+  },
+  "mix_c4s2_nofert": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "collect_fert": false
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 12.0,
+        "median": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "stdev": 0.0
+      },
+      "starter": {
+        "n": 6,
+        "mean": 12.0,
+        "median": 12.0,
+        "min": 12.0,
+        "max": 12.0,
+        "stdev": 0.0
+      }
+    }
+  },
+  "mix_c3s3_nofert": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "collect_fert": false
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 28.0,
+        "median": 28.0,
+        "min": 28.0,
+        "max": 28.0,
+        "stdev": 0.0
+      },
+      "starter": {
+        "n": 6,
+        "mean": 28.0,
+        "median": 28.0,
+        "min": 28.0,
+        "max": 28.0,
+        "stdev": 0.0
+      }
+    }
+  },
+  "cow6_nofert": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "collect_fert": false
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "stdev": 0.0
+      },
+      "starter": {
+        "n": 6,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 4.0,
+        "max": 4.0,
+        "stdev": 0.0
+      }
+    }
+  },
+  "mix_c2s2_nofert": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          2
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "collect_fert": false
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11596.0,
+        "median": 11671.0,
+        "min": 10095.0,
+        "max": 12932.0,
+        "stdev": 1049.8439884097065
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11736.833333333334,
+        "median": 11766.0,
+        "min": 10596.0,
+        "max": 13110.0,
+        "stdev": 1016.9940838897081
+      }
+    }
+  },
+  "mix_c4s2_start2": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "start_day": 2
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 15972.666666666666,
+        "median": 16229.5,
+        "min": 12210.0,
+        "max": 18055.0,
+        "stdev": 2044.572685591458
+      },
+      "starter": {
+        "n": 6,
+        "mean": 15930.0,
+        "median": 16781.0,
+        "min": 12457.0,
+        "max": 17081.0,
+        "stdev": 1791.4757045519764
+      }
+    }
+  },
+  "mix_c4s2_start5": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "start_day": 5
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11339.333333333334,
+        "median": 11383.0,
+        "min": 9523.0,
+        "max": 12324.0,
+        "stdev": 1019.4419388403965
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11293.333333333334,
+        "median": 11168.0,
+        "min": 9658.0,
+        "max": 13161.0,
+        "stdev": 1312.6251051487118
+      }
+    }
+  },
+  "mix_c4s2_start8": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "start_day": 8
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 1830.3333333333333,
+        "median": 1863.0,
+        "min": 1567.0,
+        "max": 1963.0,
+        "stdev": 135.91860309268435
+      },
+      "starter": {
+        "n": 6,
+        "mean": 1851.6666666666667,
+        "median": 1853.0,
+        "min": 1818.0,
+        "max": 1880.0,
+        "stdev": 20.684938159604602
+      }
+    }
+  },
+  "mix_c4s2_start12": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "start_day": 12
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 615.3333333333334,
+        "median": 642.0,
+        "min": 505.0,
+        "max": 681.0,
+        "stdev": 74.40878084384038
+      },
+      "starter": {
+        "n": 6,
+        "mean": 664.5,
+        "median": 688.5,
+        "min": 450.0,
+        "max": 795.0,
+        "stdev": 114.57530274889088
+      }
+    }
+  },
+  "mix_c3s3_start2": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "start_day": 2
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 16379.0,
+        "median": 16757.5,
+        "min": 14460.0,
+        "max": 17189.0,
+        "stdev": 999.0151150007691
+      },
+      "starter": {
+        "n": 6,
+        "mean": 16316.333333333334,
+        "median": 16468.0,
+        "min": 14236.0,
+        "max": 17513.0,
+        "stdev": 1155.2015697126917
+      }
+    }
+  },
+  "mix_c3s3_start5": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "start_day": 5
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 11658.5,
+        "median": 12426.0,
+        "min": 8811.0,
+        "max": 13045.0,
+        "stdev": 1655.2286548993768
+      },
+      "starter": {
+        "n": 6,
+        "mean": 11005.666666666666,
+        "median": 10645.5,
+        "min": 9387.0,
+        "max": 12894.0,
+        "stdev": 1248.9074692172621
+      }
+    }
+  },
+  "mix_c3s3_start8": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "start_day": 8
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 2817.5,
+        "median": 2806.0,
+        "min": 2681.0,
+        "max": 3011.0,
+        "stdev": 114.4897375313613
+      },
+      "starter": {
+        "n": 6,
+        "mean": 2845.0,
+        "median": 2794.0,
+        "min": 2793.0,
+        "max": 2953.0,
+        "stdev": 79.84985911070852
+      }
+    }
+  },
+  "mix_c3s3_start12": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "start_day": 12
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 544.1666666666666,
+        "median": 529.0,
+        "min": 493.0,
+        "max": 607.0,
+        "stdev": 46.888875724063446
+      },
+      "starter": {
+        "n": 6,
+        "mean": 508.3333333333333,
+        "median": 509.5,
+        "min": 467.0,
+        "max": 552.0,
+        "stdev": 37.98771731318778
+      }
+    }
+  },
+  "cow6_start2": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "start_day": 2
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 14819.833333333334,
+        "median": 15637.0,
+        "min": 11528.0,
+        "max": 16549.0,
+        "stdev": 1985.6448238964256
+      },
+      "starter": {
+        "n": 6,
+        "mean": 15861.666666666666,
+        "median": 16445.5,
+        "min": 13124.0,
+        "max": 17098.0,
+        "stdev": 1534.2866311959663
+      }
+    }
+  },
+  "cow6_start5": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "start_day": 5
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 10180.5,
+        "median": 10299.0,
+        "min": 8474.0,
+        "max": 11343.0,
+        "stdev": 980.8883218797133
+      },
+      "starter": {
+        "n": 6,
+        "mean": 10003.0,
+        "median": 10436.5,
+        "min": 8411.0,
+        "max": 11493.0,
+        "stdev": 1291.7270609536677
+      }
+    }
+  },
+  "cow6_start8": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "start_day": 8
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 1980.5,
+        "median": 2053.5,
+        "min": 1699.0,
+        "max": 2119.0,
+        "stdev": 161.17661120646505
+      },
+      "starter": {
+        "n": 6,
+        "mean": 1982.0,
+        "median": 2074.0,
+        "min": 1745.0,
+        "max": 2124.0,
+        "stdev": 184.84371777260918
+      }
+    }
+  },
+  "cow6_start12": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "start_day": 12
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 834.0,
+        "median": 872.0,
+        "min": 650.0,
+        "max": 904.0,
+        "stdev": 96.92677648617021
+      },
+      "starter": {
+        "n": 6,
+        "mean": 804.6666666666666,
+        "median": 814.5,
+        "min": 650.0,
+        "max": 939.0,
+        "stdev": 123.00189700434163
+      }
+    }
+  },
+  "mix_c4s2_hands1": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "num_hands": 1
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 22849.0,
+        "median": 23611.5,
+        "min": 18946.0,
+        "max": 24499.0,
+        "stdev": 2059.352616722061
+      },
+      "starter": {
+        "n": 6,
+        "mean": 21453.5,
+        "median": 21638.0,
+        "min": 18469.0,
+        "max": 23761.0,
+        "stdev": 2063.226768922893
+      }
+    }
+  },
+  "mix_c4s2_hands2": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "num_hands": 2
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 23158.833333333332,
+        "median": 24258.5,
+        "min": 19291.0,
+        "max": 24964.0,
+        "stdev": 2303.151355570594
+      },
+      "starter": {
+        "n": 6,
+        "mean": 21320.0,
+        "median": 21589.0,
+        "min": 18536.0,
+        "max": 24576.0,
+        "stdev": 2253.4868093689834
+      }
+    }
+  },
+  "mix_c3s3_hands1": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "num_hands": 1
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 22444.833333333332,
+        "median": 23144.5,
+        "min": 19589.0,
+        "max": 24533.0,
+        "stdev": 2118.959217792232
+      },
+      "starter": {
+        "n": 6,
+        "mean": 23362.0,
+        "median": 23560.0,
+        "min": 21174.0,
+        "max": 25389.0,
+        "stdev": 1757.504822183996
+      }
+    }
+  },
+  "mix_c3s3_hands2": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "num_hands": 2
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 22000.833333333332,
+        "median": 21734.5,
+        "min": 19534.0,
+        "max": 24895.0,
+        "stdev": 2454.4558188459346
+      },
+      "starter": {
+        "n": 6,
+        "mean": 23440.0,
+        "median": 23437.0,
+        "min": 22801.0,
+        "max": 24145.0,
+        "stdev": 453.9885461110225
+      }
+    }
+  },
+  "cow6_hands1": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "num_hands": 1
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 21866.666666666668,
+        "median": 22236.5,
+        "min": 14470.0,
+        "max": 25398.0,
+        "stdev": 3892.178396048499
+      },
+      "starter": {
+        "n": 6,
+        "mean": 18104.833333333332,
+        "median": 17013.5,
+        "min": 13265.0,
+        "max": 24871.0,
+        "stdev": 4882.502572110604
+      }
+    }
+  },
+  "cow6_hands2": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "num_hands": 2
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 18395.166666666668,
+        "median": 18568.0,
+        "min": 13484.0,
+        "max": 25577.0,
+        "stdev": 4413.379857509057
+      },
+      "starter": {
+        "n": 6,
+        "mean": 18895.166666666668,
+        "median": 18748.5,
+        "min": 13276.0,
+        "max": 25443.0,
+        "stdev": 4734.752344808191
+      }
+    }
+  },
+  "mix_c4s2_stagger1": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "max_buy_per_day": 1
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 17624.0,
+        "median": 17477.0,
+        "min": 14373.0,
+        "max": 21251.0,
+        "stdev": 3108.1155062191624
+      },
+      "starter": {
+        "n": 6,
+        "mean": 19419.333333333332,
+        "median": 19905.0,
+        "min": 16582.0,
+        "max": 21082.0,
+        "stdev": 1593.3975858732392
+      }
+    }
+  },
+  "mix_c3s3_stagger1": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "max_buy_per_day": 1
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 18054.0,
+        "median": 18296.0,
+        "min": 15926.0,
+        "max": 19664.0,
+        "stdev": 1407.005899063682
+      },
+      "starter": {
+        "n": 6,
+        "mean": 17711.833333333332,
+        "median": 17051.5,
+        "min": 16463.0,
+        "max": 19625.0,
+        "stdev": 1379.6456670705948
+      }
+    }
+  },
+  "cow6_stagger1": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          6
+        ]
+      ],
+      "max_buy_per_day": 1
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 18854.5,
+        "median": 18977.0,
+        "min": 16107.0,
+        "max": 21736.0,
+        "stdev": 2393.245474246217
+      },
+      "starter": {
+        "n": 6,
+        "mean": 12925.5,
+        "median": 12511.5,
+        "min": 12426.0,
+        "max": 15046.0,
+        "stdev": 1040.5755618887079
+      }
+    }
+  },
+  "mix_c4s2_wheatslack3": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          4
+        ],
+        [
+          "SHEEP",
+          2
+        ]
+      ],
+      "buy_wheat_slack": 3
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 19950.666666666668,
+        "median": 19877.0,
+        "min": 18984.0,
+        "max": 21278.0,
+        "stdev": 758.8313822363086
+      },
+      "starter": {
+        "n": 6,
+        "mean": 19784.833333333332,
+        "median": 19630.5,
+        "min": 19324.0,
+        "max": 20933.0,
+        "stdev": 590.543280942783
+      }
+    }
+  },
+  "mix_c3s3_wheatslack3": {
+    "kwargs": {
+      "animal_plan": [
+        [
+          "COW",
+          3
+        ],
+        [
+          "SHEEP",
+          3
+        ]
+      ],
+      "buy_wheat_slack": 3
+    },
+    "results": {
+      "random": {
+        "n": 6,
+        "mean": 17984.833333333332,
+        "median": 18022.5,
+        "min": 16356.0,
+        "max": 20332.0,
+        "stdev": 1511.2930115191648
+      },
+      "starter": {
+        "n": 6,
+        "mean": 17900.166666666668,
+        "median": 18146.0,
+        "min": 15779.0,
+        "max": 19540.0,
+        "stdev": 1661.0462265291314
+      }
+    }
+  }
+}

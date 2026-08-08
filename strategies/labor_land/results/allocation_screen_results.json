@@ -1,0 +1,278 @@
+[
+  {
+    "label": "A_hire_flat4_noland__alloc_quadrant",
+    "base_name": "A_hire_flat4_noland",
+    "allocation": "quadrant",
+    "vs_random": {
+      "n": 8,
+      "mean": 4144.625,
+      "median": 4086.0,
+      "min": 3884.0,
+      "max": 4358.0,
+      "stdev": 169.85450706833944
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 4126.375,
+      "median": 4110.5,
+      "min": 3808.0,
+      "max": 4370.0,
+      "stdev": 194.17660407842283
+    },
+    "combined_screen_score": 4135.5,
+    "elapsed_sec": 30.348873138427734
+  },
+  {
+    "label": "A_hire_flat4_noland__alloc_nearest",
+    "base_name": "A_hire_flat4_noland",
+    "allocation": "nearest",
+    "vs_random": {
+      "n": 8,
+      "mean": 5147.125,
+      "median": 5175.0,
+      "min": 5039.0,
+      "max": 5228.0,
+      "stdev": 85.56774676076428
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 5133.75,
+      "median": 5158.0,
+      "min": 5023.0,
+      "max": 5228.0,
+      "stdev": 74.01302974090827
+    },
+    "combined_screen_score": 5140.4375,
+    "elapsed_sec": 33.385823249816895
+  },
+  {
+    "label": "E_flat4_land_day14__alloc_quadrant",
+    "base_name": "E_flat4_land_day14",
+    "allocation": "quadrant",
+    "vs_random": {
+      "n": 8,
+      "mean": 4130.25,
+      "median": 4110.0,
+      "min": 3912.0,
+      "max": 4356.0,
+      "stdev": 162.93184376998167
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 4251.5,
+      "median": 4278.0,
+      "min": 4036.0,
+      "max": 4366.0,
+      "stdev": 117.4186648584579
+    },
+    "combined_screen_score": 4190.875,
+    "elapsed_sec": 29.60216474533081
+  },
+  {
+    "label": "E_flat4_land_day14__alloc_nearest",
+    "base_name": "E_flat4_land_day14",
+    "allocation": "nearest",
+    "vs_random": {
+      "n": 8,
+      "mean": 5119.125,
+      "median": 5142.5,
+      "min": 5014.0,
+      "max": 5228.0,
+      "stdev": 72.54050592599971
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 5171.875,
+      "median": 5175.5,
+      "min": 5039.0,
+      "max": 5401.0,
+      "stdev": 114.55433832278649
+    },
+    "combined_screen_score": 5145.5,
+    "elapsed_sec": 34.50182819366455
+  },
+  {
+    "label": "A_hire_fibcap3_noland__alloc_quadrant",
+    "base_name": "A_hire_fibcap3_noland",
+    "allocation": "quadrant",
+    "vs_random": {
+      "n": 8,
+      "mean": 4194.375,
+      "median": 4194.0,
+      "min": 3960.0,
+      "max": 4356.0,
+      "stdev": 149.94850306498086
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 4139.75,
+      "median": 4108.0,
+      "min": 4004.0,
+      "max": 4366.0,
+      "stdev": 128.21717067983857
+    },
+    "combined_screen_score": 4167.0625,
+    "elapsed_sec": 29.319075107574463
+  },
+  {
+    "label": "A_hire_fibcap3_noland__alloc_nearest",
+    "base_name": "A_hire_fibcap3_noland",
+    "allocation": "nearest",
+    "vs_random": {
+      "n": 8,
+      "mean": 5170.875,
+      "median": 5187.5,
+      "min": 5043.0,
+      "max": 5275.0,
+      "stdev": 76.34964215464835
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 5166.625,
+      "median": 5201.5,
+      "min": 5039.0,
+      "max": 5228.0,
+      "stdev": 76.2475994938295
+    },
+    "combined_screen_score": 5168.75,
+    "elapsed_sec": 27.61126184463501
+  },
+  {
+    "label": "A_hire_flat3_noland__alloc_quadrant",
+    "base_name": "A_hire_flat3_noland",
+    "allocation": "quadrant",
+    "vs_random": {
+      "n": 8,
+      "mean": 4168.875,
+      "median": 4140.0,
+      "min": 3917.0,
+      "max": 4384.0,
+      "stdev": 170.42756106753558
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 4152.5,
+      "median": 4115.5,
+      "min": 3953.0,
+      "max": 4405.0,
+      "stdev": 183.72417214011722
+    },
+    "combined_screen_score": 4160.6875,
+    "elapsed_sec": 29.078348398208618
+  },
+  {
+    "label": "A_hire_flat3_noland__alloc_nearest",
+    "base_name": "A_hire_flat3_noland",
+    "allocation": "nearest",
+    "vs_random": {
+      "n": 8,
+      "mean": 5184.25,
+      "median": 5216.5,
+      "min": 5077.0,
+      "max": 5253.0,
+      "stdev": 75.91677774284906
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 5165.125,
+      "median": 5228.0,
+      "min": 5052.0,
+      "max": 5228.0,
+      "stdev": 87.11804389119726
+    },
+    "combined_screen_score": 5174.6875,
+    "elapsed_sec": 27.80159902572632
+  },
+  {
+    "label": "C_fibcap5_money6000__alloc_quadrant",
+    "base_name": "C_fibcap5_money6000",
+    "allocation": "quadrant",
+    "vs_random": {
+      "n": 8,
+      "mean": 4157.125,
+      "median": 4205.5,
+      "min": 3929.0,
+      "max": 4281.0,
+      "stdev": 119.29008760161089
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 4053.25,
+      "median": 4020.0,
+      "min": 3862.0,
+      "max": 4260.0,
+      "stdev": 150.12352057080005
+    },
+    "combined_screen_score": 4105.1875,
+    "elapsed_sec": 26.687111616134644
+  },
+  {
+    "label": "C_fibcap5_money6000__alloc_nearest",
+    "base_name": "C_fibcap5_money6000",
+    "allocation": "nearest",
+    "vs_random": {
+      "n": 8,
+      "mean": 5110.5,
+      "median": 5117.5,
+      "min": 5038.0,
+      "max": 5178.0,
+      "stdev": 71.94839420425885
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 5198.5,
+      "median": 5177.0,
+      "min": 5039.0,
+      "max": 5388.0,
+      "stdev": 104.29354178060527
+    },
+    "combined_screen_score": 5154.5,
+    "elapsed_sec": 33.728394746780396
+  },
+  {
+    "label": "A_hire_fibcap5_noland__alloc_quadrant",
+    "base_name": "A_hire_fibcap5_noland",
+    "allocation": "quadrant",
+    "vs_random": {
+      "n": 8,
+      "mean": 4042.75,
+      "median": 4004.5,
+      "min": 3928.0,
+      "max": 4281.0,
+      "stdev": 122.27223724132965
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 4097.75,
+      "median": 4069.5,
+      "min": 3945.0,
+      "max": 4301.0,
+      "stdev": 146.76974191861598
+    },
+    "combined_screen_score": 4070.25,
+    "elapsed_sec": 30.847890377044678
+  },
+  {
+    "label": "A_hire_fibcap5_noland__alloc_nearest",
+    "base_name": "A_hire_fibcap5_noland",
+    "allocation": "nearest",
+    "vs_random": {
+      "n": 8,
+      "mean": 5153.125,
+      "median": 5167.0,
+      "min": 5050.0,
+      "max": 5178.0,
+      "stdev": 43.02968244629016
+    },
+    "vs_starter": {
+      "n": 8,
+      "mean": 5161.625,
+      "median": 5178.0,
+      "min": 5058.0,
+      "max": 5178.0,
+      "stdev": 42.04737973830406
+    },
+    "combined_screen_score": 5157.375,
+    "elapsed_sec": 34.938703298568726
+  }
+]
