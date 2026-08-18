@@ -1,0 +1,18 @@
+{
+  "phase4_w4_ungated": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": true,
+    "OPPONENT_SIGNAL_WEIGHT": 4.0,
+    "OPPONENT_EXPANSION_THRESHOLD": -1.0
+  },
+  "phase4_w4_expansion": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": true,
+    "OPPONENT_SIGNAL_WEIGHT": 4.0,
+    "OPPONENT_EXPANSION_THRESHOLD": 0.0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "accepted": 205,
+  "class_counts": {
+    "-1": 71,
+    "0": 107,
+    "1": 27
+  },
+  "output_class_counts": {
+    "competitive_expansion|-1": 33,
+    "competitive_expansion|0": 39,
+    "competitive_expansion|1": 19,
+    "product:CARROT:increase|-1": 2,
+    "product:CARROT:increase|0": 3,
+    "product:EGG:avoid|-1": 1,
+    "product:EGG:avoid|0": 1,
+    "product:EGG:avoid|1": 1,
+    "product:EGG:increase|-1": 10,
+    "product:EGG:increase|0": 2,
+    "product:EGG:increase|1": 1,
+    "product:MELON:avoid|-1": 2,
+    "product:MELON:avoid|0": 3,
+    "product:MELON:avoid|1": 1,
+    "product:MELON:increase|-1": 1,
+    "product:MELON:increase|0": 10,
+    "product:MILK:avoid|-1": 3,
+    "product:MILK:avoid|1": 1,
+    "product:MILK:increase|-1": 4,
+    "product:MILK:increase|0": 10,
+    "product:STRAWBERRY:avoid|0": 3,
+    "product:STRAWBERRY:increase|0": 8,
+    "product:STRAWBERRY:increase|1": 2,
+    "product:TOMATO:avoid|0": 1,
+    "product:TOMATO:increase|-1": 2,
+    "product:TOMATO:increase|0": 3,
+    "product:TOMATO:increase|1": 1,
+    "product:WHEAT:avoid|0": 4,
+    "product:WHEAT:increase|-1": 1,
+    "product:WHEAT:increase|0": 6,
+    "product:WHEAT:increase|1": 1,
+    "product:WOOL:avoid|-1": 3,
+    "product:WOOL:avoid|0": 3,
+    "product:WOOL:increase|-1": 9,
+    "product:WOOL:increase|0": 11
+  },
+  "pairs": 300,
+  "rejected": 95,
+  "rejection_counts": {
+    "unapplied_or_infeasible": 95
+  },
+  "schema_hash": "2b905e14c6122dc2506b1c7fb2cc5a47c9a44603bc7941cbdb51e51c9b70277e",
+  "schema_version": "counterfactual-v1"
+}

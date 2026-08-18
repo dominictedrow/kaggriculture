@@ -1,0 +1,10 @@
+{
+  "baseline_moved": {},
+  "land_before": {"LAND_BEFORE_ANIMALS": true},
+  "land_day5": {"LAND_MIN_DAY": 5},
+  "animal_cap2": {"MAX_ANIMAL_BUY_PER_DAY": 2},
+  "animal_cap3": {"MAX_ANIMAL_BUY_PER_DAY": 3},
+  "bigger_10c5s_h6": {"ANIMAL_MIX": {"COW": 10, "SHEEP": 5}, "LIVESTOCK_HANDS": 6},
+  "bigger_11c6s_h6": {"ANIMAL_MIX": {"COW": 11, "SHEEP": 6}, "LIVESTOCK_HANDS": 6},
+  "melon3": {"MELON_HANDS": 3}
+}

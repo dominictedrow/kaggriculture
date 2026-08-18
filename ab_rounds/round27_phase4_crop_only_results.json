@@ -1,0 +1,26 @@
+{
+  "round": "round27_phase4_crop_only",
+  "screen_n": 20,
+  "screen": {
+    "phase4_crop_w1": {"ring_diff": 1335.95, "leader_clone_diff": -225.2},
+    "phase4_crop_w2": {"ring_diff": 1143.8, "leader_clone_diff": -167.0},
+    "phase4_crop_w4": {"ring_diff": 1092.2, "leader_clone_diff": 57.9}
+  },
+  "selected": "phase4_crop_w4",
+  "confirmation_n30": {
+    "starter": {"candidate_mean": 22266.433333333334, "control_mean": 22266.433333333334, "diff_mean": 0.0, "diff_stdev": 0.0},
+    "ring": {"candidate_mean": 17173.9, "control_mean": 16399.0, "diff_mean": 774.9, "diff_stdev": 2663.7963232432276},
+    "leader_clone": {"candidate_mean": 19438.433333333334, "control_mean": 19026.766666666666, "diff_mean": 411.6666666666667, "diff_stdev": 4095.1987475102105},
+    "pooled_diff_mean": 395.5222222222222,
+    "approximate_95_percent_ci": [-184.3657664310412, 975.4102108754855]
+  },
+  "expanded_confirmation_n60": {
+    "starter": {"candidate_mean": 23384.05, "control_mean": 23384.05, "diff_mean": 0.0, "diff_stdev": 0.0},
+    "ring": {"candidate_mean": 17901.833333333332, "control_mean": 17109.65, "diff_mean": 792.1833333333333, "diff_stdev": 2741.08109002459},
+    "leader_clone": {"candidate_mean": 19817.233333333334, "control_mean": 19470.166666666668, "diff_mean": 347.06666666666666, "diff_stdev": 3315.472391970849},
+    "pooled_diff_mean": 379.75,
+    "pooled_diff_stdev": 2491.0676759576636,
+    "approximate_95_percent_ci": [15.830484880408108, 743.6695151195919]
+  },
+  "decision": "promoted"
+}

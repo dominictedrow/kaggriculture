@@ -1,0 +1,49 @@
+{
+  "delayed_control": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": false
+  },
+  "town_d8_x2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 8,
+    "TOWN_EXPOSURE_MULTIPLIER": 2.0
+  },
+  "town_d10_x1": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_EXPOSURE_MULTIPLIER": 1.0
+  },
+  "town_d10_x2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_EXPOSURE_MULTIPLIER": 2.0
+  },
+  "town_d10_x3": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_EXPOSURE_MULTIPLIER": 3.0
+  },
+  "town_d12_x2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 12,
+    "TOWN_EXPOSURE_MULTIPLIER": 2.0
+  },
+  "town_d15_x2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 15,
+    "TOWN_EXPOSURE_MULTIPLIER": 2.0
+  }
+}

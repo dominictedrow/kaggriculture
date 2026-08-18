@@ -1,0 +1,9 @@
+{
+  "v1_control": {"ANIMAL_MIX": {"COW": 4, "SHEEP": 2}, "LIVESTOCK_HANDS": 2, "MELON_HANDS": 1, "BUY_NE_LAND": false},
+  "v2_default": {},
+  "v2_6c6s": {"ANIMAL_MIX": {"COW": 6, "SHEEP": 6}},
+  "v2_10c5s_h6": {"ANIMAL_MIX": {"COW": 10, "SHEEP": 5}, "LIVESTOCK_HANDS": 6},
+  "v2_8c4s_h4": {"LIVESTOCK_HANDS": 4},
+  "v2_melon2hands": {"MELON_HANDS": 2},
+  "v2_smallherd_h3": {"ANIMAL_MIX": {"COW": 6, "SHEEP": 3}, "LIVESTOCK_HANDS": 3}
+}

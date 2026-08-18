@@ -1,0 +1,32 @@
+{
+  "phase3_crop_control": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": false
+  },
+  "phase4_crop_w1": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": true,
+    "OPPONENT_SIGNAL_WEIGHT": 1.0,
+    "OPPONENT_EXPANSION_THRESHOLD": -1.0
+  },
+  "phase4_crop_w2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": true,
+    "OPPONENT_SIGNAL_WEIGHT": 2.0,
+    "OPPONENT_EXPANSION_THRESHOLD": -1.0
+  },
+  "phase4_crop_w4": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": true,
+    "OPPONENT_SIGNAL_WEIGHT": 4.0,
+    "OPPONENT_EXPANSION_THRESHOLD": -1.0
+  }
+}

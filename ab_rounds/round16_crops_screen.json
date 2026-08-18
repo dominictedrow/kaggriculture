@@ -1,0 +1,8 @@
+{
+  "baseline_refactor_check": {},
+  "wheat8_h1": {"WHEAT_TILES": 8, "WHEAT_HANDS": 1},
+  "wheat6_h1": {"WHEAT_TILES": 6, "WHEAT_HANDS": 1},
+  "carrot8_h1": {"CARROT_TILES": 8, "CARROT_HANDS": 1},
+  "carrot6_h1": {"CARROT_TILES": 6, "CARROT_HANDS": 1},
+  "wheat6_carrot6_h1each": {"WHEAT_TILES": 6, "WHEAT_HANDS": 1, "CARROT_TILES": 6, "CARROT_HANDS": 1}
+}

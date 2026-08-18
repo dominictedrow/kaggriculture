@@ -1,0 +1,26 @@
+{
+  "round": "round29_phase4_final",
+  "flags": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": true,
+    "WATCHER_BACKEND": "rules"
+  },
+  "smoke": {
+    "opponent": "starter",
+    "episode_steps": 120,
+    "n": 4,
+    "mean": 175.5,
+    "min": 175.0,
+    "max": 177.0
+  },
+  "verification": [
+    "strategy_follower.py syntax",
+    "watcher contract and disabled neutrality",
+    "100-turn editable-strategy smoke",
+    "four 120-turn final-enabled smoke episodes",
+    "generated agent is the last callable before the A/B runner"
+  ],
+  "promotion_evidence": "round27_phase4_crop_only_results.json"
+}

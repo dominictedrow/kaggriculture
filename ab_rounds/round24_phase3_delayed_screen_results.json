@@ -1,0 +1,16 @@
+{
+  "round": "round24_phase3_delayed_screen",
+  "opponent": "starter",
+  "n": 20,
+  "control_mean": 24536.85,
+  "paired_differences": {
+    "town_d8_x2": [-7345.85, 3495.034120381599],
+    "town_d10_x1": [-7571.8, 3616.791739126062],
+    "town_d10_x2": [-8219.55, 2935.8056990597283],
+    "town_d10_x3": [-7755.95, 3239.64105345996],
+    "town_d12_x2": [-7658.9, 2666.7195676770325],
+    "town_d15_x2": [-2582.65, 2778.018306843548]
+  },
+  "pair_value_format": ["diff_mean", "diff_stdev"],
+  "decision": "rejected_delayed_broad_caps"
+}

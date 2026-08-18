@@ -1,0 +1,12 @@
+{
+  "round": "round26_phase4_screen",
+  "n": 20,
+  "decision": "rejected_opponent_livestock_caps",
+  "summary": {
+    "phase4_w025": {"ring_diff": -2158.85, "leader_clone_diff": -1227.35},
+    "phase4_w05": {"starter_diff": 0.0, "ring_diff": -2236.65, "leader_clone_diff": -1026.6},
+    "phase4_w10": {"ring_diff": -1952.45, "leader_clone_diff": -430.6},
+    "phase4_no_land_gate": {"ring_diff": -2236.65, "leader_clone_diff": -1026.6}
+  },
+  "finding": "Forecast-based livestock ceilings suppressed the baseline herd before it was established. Land gating was not causal."
+}

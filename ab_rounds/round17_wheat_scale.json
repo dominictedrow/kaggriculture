@@ -1,0 +1,6 @@
+{
+  "wheat10_h1": {"WHEAT_TILES": 10, "WHEAT_HANDS": 1},
+  "wheat12_h1": {"WHEAT_TILES": 12, "WHEAT_HANDS": 1},
+  "wheat8_h18herd": {"WHEAT_TILES": 8, "WHEAT_HANDS": 1, "ANIMAL_MIX": {"COW": 12, "SHEEP": 6}, "LIVESTOCK_HANDS": 7},
+  "wheat8_h20herd": {"WHEAT_TILES": 8, "WHEAT_HANDS": 1, "ANIMAL_MIX": {"COW": 13, "SHEEP": 7}, "LIVESTOCK_HANDS": 8}
+}

@@ -1,0 +1,8 @@
+{
+  "v2_10c5s_h6": {"ANIMAL_MIX": {"COW": 10, "SHEEP": 5}, "LIVESTOCK_HANDS": 6},
+  "v2_12c6s_h7": {"ANIMAL_MIX": {"COW": 12, "SHEEP": 6}, "LIVESTOCK_HANDS": 7},
+  "v2_10c5s_h6_melon2": {"ANIMAL_MIX": {"COW": 10, "SHEEP": 5}, "LIVESTOCK_HANDS": 6, "MELON_HANDS": 2},
+  "v2_10c5s_h5": {"ANIMAL_MIX": {"COW": 10, "SHEEP": 5}, "LIVESTOCK_HANDS": 5},
+  "v2_14c7s_h8": {"ANIMAL_MIX": {"COW": 14, "SHEEP": 7}, "LIVESTOCK_HANDS": 8},
+  "v2_8c4s_h5_melon2": {"MELON_HANDS": 2}
+}

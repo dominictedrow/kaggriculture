@@ -1,0 +1,8 @@
+{
+  "round": "round28_phase4_expansion_isolation",
+  "n": 20,
+  "ring_diff": 0.0,
+  "leader_clone_diff": 0.0,
+  "decision": "keep_competitive_expansion_threshold",
+  "finding": "The thresholded competitive expansion recommendation produced identical actions and money to always allowing baseline expansion on all paired seeds."
+}

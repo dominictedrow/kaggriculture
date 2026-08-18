@@ -1,0 +1,16 @@
+{
+  "phase2_adaptive": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": false,
+    "ENABLE_OPPONENT_WATCHER": false,
+    "WATCHER_BACKEND": "rules"
+  },
+  "phase3_town_rules": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "ENABLE_OPPONENT_WATCHER": false,
+    "WATCHER_BACKEND": "rules"
+  }
+}

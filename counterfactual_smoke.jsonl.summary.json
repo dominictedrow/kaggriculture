@@ -1,0 +1,15 @@
+{
+  "accepted": 2,
+  "class_counts": {
+    "0": 2
+  },
+  "output_class_counts": {
+    "competitive_expansion|0": 1,
+    "product:MELON:avoid|0": 1
+  },
+  "pairs": 2,
+  "rejected": 0,
+  "rejection_counts": {},
+  "schema_hash": "2b905e14c6122dc2506b1c7fb2cc5a47c9a44603bc7941cbdb51e51c9b70277e",
+  "schema_version": "counterfactual-v1"
+}

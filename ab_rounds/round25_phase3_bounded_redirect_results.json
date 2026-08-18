@@ -1,0 +1,28 @@
+{
+  "round": "round25_phase3_bounded_redirect",
+  "opponent": "starter",
+  "screen_n": 20,
+  "control_mean": 21521.05,
+  "screen_paired_differences": {
+    "town_redirect_1": [872.45, 2426.772113756309],
+    "town_redirect_2": [857.45, 2437.3925342031953],
+    "town_redirect_4": [827.45, 2459.5937292890253],
+    "town_redirect_6": [125.8, 2888.6690907387565],
+    "town_d15_redirect_2": [-34.9, 114.60775210301118]
+  },
+  "expanded_best": {
+    "variant": "town_redirect_1",
+    "n": 60,
+    "seed_base": 25000,
+    "candidate_mean": 21871.8,
+    "control_mean": 21805.1,
+    "candidate_range": [13751.0, 34355.0],
+    "control_range": [13497.0, 34385.0],
+    "diff_mean": 66.7,
+    "diff_stdev": 1820.6622868373652,
+    "approximate_95_percent_ci": [-393.9, 527.3]
+  },
+  "pair_value_format": ["diff_mean", "diff_stdev"],
+  "decision": "not_promoted",
+  "reason": "The best bounded township redirect remained inconclusive after the single required expansion to 60 starter episodes. Per SVM.md, revert to the simpler phase-2 predecessor."
+}

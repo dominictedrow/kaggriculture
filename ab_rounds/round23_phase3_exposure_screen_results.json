@@ -1,0 +1,16 @@
+{
+  "round": "round23_phase3_exposure_screen",
+  "smoke_120_turn_mean": {
+    "phase2_control": 175.5,
+    "town_x1": 7.0,
+    "town_x1_5": 60.0,
+    "town_x2": 189.5,
+    "town_x3": 168.0,
+    "town_x4": 136.0
+  },
+  "paired_starter_n20": {
+    "town_x2": {"candidate_mean": 15118.55, "control_mean": 21731.2, "diff_mean": -6612.65, "diff_stdev": 5665.572375738999},
+    "town_x3": {"candidate_mean": 17643.55, "control_mean": 21731.2, "diff_mean": -4087.65, "diff_stdev": 4576.981127279605}
+  },
+  "decision": "rejected_broad_exposure_caps"
+}

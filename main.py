@@ -81,25 +81,107 @@ confirmed number, unchanged from pass 2: 86,810 combined mean (n=40,
 consistent with pass 2's 86,253 at n=50) -- didn't reach the 95k target; see
 the chat writeup for what a genuinely structural change (SW/SE land, a
 different crew architecture) would need to try next.
+
+Pass 4 (AB-confirmed regression, reverted): three changes drawn from
+report.md's replay analysis of the real top-10 leaderboard (992+ episodes
+across 3 distinct strategy families), not from phase-1 sweeps against
+"random"/"starter" -- see CLAUDE.md's caveat on why that distinction
+matters.
+
+(1) BUY_LAND now targets 3 quadrants (NW+NE+SW, generalized from the old
+NE-only BUY_NE_LAND flag) -- every top-10 family buys a 3rd quadrant by
+day 9-11 using the same "retry every day until affordable" idiom this file
+already used for NE, so this is that same proven idiom extended, not new
+design. SE ($4k) is skipped for now -- no crew/tile plan built for it yet.
+
+(2) Melon stops being replanted after MELON_EXIT_DAY (day 10) -- every
+top-10 family abandons melon by day ~20 rather than fighting its permanent
+glut (zero town demand, above_target=3.6), and since melon matures in
+exactly 10 days, day-10 is the latest planting that still finishes near
+that window. Already-growing melon is left to mature normally (no point
+discarding a sunk seed cost); once a tile empties post-exit it gets WHEAT
+instead, using the same hand/tile assignment with no crew restructuring --
+wheat's price climbs all season on staple demand (RULES.md Price Function
+table) rather than gluting, so this doubles as the "wheat as exit vehicle"
+late-game pattern report.md found across the whole leaderboard, just
+triggered by a day threshold instead of literally being end-of-season.
+
+(3) The herd grows from 17 to 23 animals (11->15 COW, 6->8 SHEEP) with
+livestock hands 6->7 (N_HIRES 8->9), chasing report.md's observed top-10
+hand counts -- capped well short of that 12-14 range by a real constraint
+report.md doesn't surface: HIRE cost is `fib(hires_today)` and hands drop
+at end of day, so it's not a one-time cost, it's paid in full *every
+single day* (RULES.md "Hiring" section). Going from 8 to 12 daily hires
+looked like a proportionate scale-up but is actually a 7x jump in daily
+hire spend ($54/day -> $376/day, $1,620 -> $11,280 over 30 days) --
+confirmed by a direct sizing sweep (not just theory) that N_HIRES=12
+reliably bankrupts the farm to $0 with 0 hands by day ~19, every seed
+tried. The cliff sits between N_HIRES=9 ($88/day, safe across every seed
+tried) and N_HIRES=10 ($143/day, reliably bankrupts) -- N_HIRES=9 is the
+ceiling this pass uses. This probably means top-10 agents ramp hiring up
+over several days rather than paying the full target's fib-cost from day
+0 the way this file's HIRE block always has (report.md §4 hints at this:
+Family C "only crossing 10 hands around day 12-13" despite a field-high
+peak of 14) -- a gradual hiring ramp is the natural next lever if 9 hires
+turns out to be the real ceiling under a fixed-target policy, but it's a
+new mechanism, not a sizing tweak, so it's out of scope for this pass.
+SW is unused by 23 animals (fits entirely in NW's 25 tiles) -- it exists
+as forward-compatible overflow room (see _LIVESTOCK_POOL) for whenever a
+future pass raises the target past 25, not exercised by this pass's
+numbers. A 10-seed sanity check (not a real AB confirm -- see 1st.md's
+"Measurement problem" on why n=10 can't settle this) put COW=15/SHEEP=8/
+hands=7 at a 72,931 mean vs the original 17-animal/6-hand config's 69,315
+over the same 10 seeds, with no bankruptcies either side -- directionally
+fine, not a confirmed win; that's what the next thorough AB pass is for.
+
+The thorough pass: `harness.compare_paired` (seeded, n=30) against a
+reconstructed pass-3 baseline (COW=11/SHEEP=6, LIVESTOCK_HANDS=6,
+LAND_TARGET_QUADRANTS=2, MELON_EXIT_DAY effectively off) found pass 4
+*worse*, not better -- mean diff -18,518 vs `random` (stdev 36,065, n=30;
+a real signal, not noise) and a statistical tie vs `starter` (+102, stdev
+34,522). The 10-seed sanity check's apparent +3,616 edge didn't survive
+proper n. Root cause not isolated (the three changes were bundled and
+reverted together, matching `leader_clone`'s own lesson in 1st.md: copying
+the leaderboard's output numbers -- herd size, quadrant count -- doesn't
+automatically transfer to an economy that didn't produce them), but the
+bigger herd's daily hire/feed OPEX and the 3rd quadrant's $2k up-front
+land cost are the leading suspects, both competing with the same cash pool
+BUY_LAND and HIRE already contend for. Reverted to pass 3's values below;
+if a future pass wants this lever again, isolate and AB-confirm each of
+the three changes independently rather than bundling.
+
+Current replay-driven revision: expansion is now isolated from the earlier
+herd-size experiment. It can expand through NW+NE+SW when the land purchase is
+affordable, assigns the overflow crop slice in SW, stops melon/wheat planting
+when the remaining season cannot repay them, and liquidates on day 29. Routing
+now uses owned-cell paths, including recovery from a hand's locked spawn tile.
+These are behavior/correctness changes requested from replay review; they are
+not yet a paired-performance claim.
 """
 
 # ---- Constants (the "easy to change" knobs) --------------------------------
 
-ANIMAL_MIX = {"COW": 11, "SHEEP": 6}  # AB-tested winner (round15_final.json, n=50): 86,253 combined mean
+ANIMAL_MIX = {"COW": 11, "SHEEP": 6}   # pass 3 value -- pass 4's 15/8 AB-confirmed worse (see docstring), reverted
 ANIMAL_COST = {"COW": 400, "SHEEP": 500}
-LIVESTOCK_HANDS = 6                    # + farmer = 7 units / 17 animals, ~2.4 tiles/unit
-MELON_HANDS = 2                        # splitting the 19 melon tiles across 2 units beat 1 hand at this scale --
-                                        # a single melon hand couldn't service the tiles fast enough (round5/6/7);
-                                        # a 3rd hand was tried and reliably broke the economics (round11/13) -- not used
-MAX_MELON_TILES = 19                   # melon's own T=300 / 0.55 yield-per-tile-day / 30 days ~= 18 tiles -- keep near that;
-                                        # expanding to 26 tiles under NE tested statistically tied, not worth the complexity (round14)
+LIVESTOCK_HANDS = 6                    # pass 3 value -- pass 4's 7 (N_HIRES 8->9) AB-confirmed worse, reverted
+MELON_HANDS = 3                        # scale crop labor with the third quadrant: 45 tiles split 15/hand keeps each route
+                                        # below the known-bad 19-tile single-hand load while holding total hires at the
+                                        # documented safe ceiling of 9 (6 livestock + 3 crop)
+MAX_MELON_TILES = 45                   # 8 NW + 25 NE + 12 SW: the $2k third quadrant now adds a meaningful production
+                                        # block instead of only three tiles; MELON_EXIT_DAY still limits late exposure
 MELON_YIELD_DAY = 10                   # melon: first_yield_day == max_yield_day == 10 (RULES.md Object Types)
-BUY_NE_LAND = True                     # NW alone (25 tiles) can't hold 17 livestock + 19 melon; NE ($1k) covers it
+MELON_EXIT_DAY = 19                    # switch away from melon on day 19; later plantings cannot close cleanly
+WHEAT_EXIT_DAY = 26                    # day 25 is the last wheat planting day that can mature before season end
+LIQUIDATION_DAY = 29                   # stop routine work, bank carried goods, and force final sales
+LAND_TARGET_QUADRANTS = 3              # NW+NE+SW; SW is represented by the overflow crop slice above
+LAND_UTILIZATION_TRIGGER = 0.65        # observed baseline fills 68% of NW; expand only once that capacity is reached
 LAND_MIN_DAY = 0                       # earliest day to attempt BUY_LAND -- 0 = as soon as affordable (swept, best default)
 MAX_ANIMAL_BUY_PER_DAY = None          # None = uncapped -- buy every affordable animal every day (swept, best default)
 SELL_MIN_PRICE_FRAC = 0.4              # hold melon/milk/wool instead of dumping while price is below 40% of base --
                                         # confirmed win over dump-immediate (round12/14/15) once production volume is high enough to move the price
 _BASE_PRICE = {"MELON": 250, "MILK": 160, "WOOL": 200, "CARROT": 35}  # RULES.md Object Types table -- for the sell-gate check above
+SELLABLE_PRODUCTS = {"WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON",
+                     "EGG", "MILK", "WOOL", "FERTILIZER"}
 
 # ---- Crop diversification knobs --------------------------------------------
 # Wheat's price barely reacts to glut (T=400, above_target=0.2 -- RULES.md
@@ -117,8 +199,14 @@ ANIMAL_STRUCTURE = "PASTURE"
 SHED_ADJACENT = {(4, 4), (5, 4), (4, 5), (5, 5)}
 
 # NW quadrant, backward scan from the farmer's shed-adjacent spawn (4, 4) --
-# same order as the proven livestock finding's tile pick.
+# same order as the proven livestock finding's tile pick. SW backward scan
+# (mirrored from its own shed-adjacent corner (4, 5)) is pure overflow room:
+# with ANIMAL_MIX <= 25 this pool is never reached and behavior is identical
+# to pre-pass-4 (pure NW), same pattern melon already uses for its own
+# NW-free + NE overflow below.
 _NW_BACKWARD = [(x, y) for y in range(4, -1, -1) for x in range(4, -1, -1)]
+_SW_BACKWARD = [(x, y) for y in range(9, 4, -1) for x in range(4, -1, -1)]
+_LIVESTOCK_POOL = _NW_BACKWARD + _SW_BACKWARD
 
 
 def _livestock_type_sequence():
@@ -129,17 +217,19 @@ def _livestock_type_sequence():
 
 
 LIVESTOCK_TYPES = _livestock_type_sequence()
-LIVESTOCK_POSITIONS = _NW_BACKWARD[: len(LIVESTOCK_TYPES)]
+LIVESTOCK_POSITIONS = _LIVESTOCK_POOL[: len(LIVESTOCK_TYPES)]
 
-# Crop pool: NW forward scan minus livestock's tiles, then NE forward scan
-# (only reachable once BUY_NE_LAND unlocks it -- locked tiles are passable
-# but PLANT no-ops on them, so listing them early is harmless, not incorrect).
+# Crop pool: NW forward scan minus livestock's tiles, then NE and SW forward
+# scans. The final twelve melon positions are in SW and remain locked until the
+# third land purchase succeeds; the third crop hand then has the capacity to
+# bring that new block into production without overloading the original crew.
 # Melon claims the first MAX_MELON_TILES; wheat and carrot split whatever's
 # left, in that order.
 _claimed = set(LIVESTOCK_POSITIONS)
 _NW_FREE = [(x, y) for y in range(0, 5) for x in range(0, 5) if (x, y) not in _claimed]
 _NE_FORWARD = [(x, y) for y in range(0, 5) for x in range(5, 10)]
-_ALL_FREE = _NW_FREE + _NE_FORWARD
+_SW_FORWARD = [(x, y) for y in range(5, 10) for x in range(0, 5)]
+_ALL_FREE = _NW_FREE + _NE_FORWARD + _SW_FORWARD
 MELON_POSITIONS = _ALL_FREE[:MAX_MELON_TILES]
 _SPARE = _ALL_FREE[MAX_MELON_TILES:]
 WHEAT_POSITIONS = _SPARE[:WHEAT_TILES]
@@ -192,35 +282,92 @@ def _step_toward(pos, target):
     return None
 
 
+def _owned_step_toward(pos, targets, tiles):
+    """Shortest next step that stays on owned land.
+
+    A newly hired hand may spawn on a locked shed tile; that starting square
+    is allowed, but every square entered by the route must be owned.
+    """
+    targets = set(targets)
+    if not targets or pos in targets:
+        return None
+    height, width = len(tiles), len(tiles[0])
+    queue = [pos]
+    first_step = {pos: None}
+    for cur in queue:
+        x, y = cur
+        for action, nx, ny in (("WEST", x - 1, y), ("EAST", x + 1, y),
+                               ("NORTH", x, y - 1), ("SOUTH", x, y + 1)):
+            nxt = (nx, ny)
+            if not (0 <= nx < width and 0 <= ny < height) or nxt in first_step:
+                continue
+            # A hand can spawn on any of the four shed-adjacent squares,
+            # including a locked one. Permit locked shed squares only as the
+            # short escape bridge; normal routing remains owned-land-only.
+            if tiles[ny][nx] == "LOCKED" and nxt not in SHED_ADJACENT:
+                continue
+            first_step[nxt] = action if cur == pos else first_step[cur]
+            if nxt in targets:
+                return first_step[nxt]
+            queue.append(nxt)
+    return None
+
+
 def _is_shed_adjacent(pos):
     return pos in SHED_ADJACENT
 
 
-def _nearest_step(pos, positions):
+def _nearest_step(pos, positions, tiles):
     """Step toward the closest of `positions` (Manhattan), not just the
     first one found -- every wasted step here is an action turn not spent
     watering/feeding/harvesting.
     """
     if not positions:
         return None
-    ux, uy = pos
-    target = min(positions, key=lambda p: abs(p[0] - ux) + abs(p[1] - uy))
-    return _step_toward(pos, target)
+    owned = [p for p in positions if tiles[p[1]][p[0]] != "LOCKED"]
+    return _owned_step_toward(pos, owned, tiles)
+
+
+def _return_to_shed(pos, inv, tiles):
+    if not any(n > 0 for n in inv.values()):
+        return None
+    if _is_shed_adjacent(pos):
+        return ["DROP"]
+    owned_shed = [p for p in SHED_ADJACENT if tiles[p[1]][p[0]] != "LOCKED"]
+    step = _owned_step_toward(pos, owned_shed, tiles)
+    return [step] if step else ["PASS"]
 
 
 # ---- Livestock unit action (adapted from agent_lib.py::_unit_action, ------
 # simplified since both COW and SHEEP use PASTURE -- no COOP branching) -----
 
-def _livestock_action(pos, inv, tiles, shed, idxs):
+def _livestock_action(pos, inv, tiles, shed, idxs, liquidation=False):
     ux, uy = pos
+    if liquidation:
+        returning = _return_to_shed(pos, inv, tiles)
+        if returning:
+            return returning
+        ready = []
+        for i in idxs:
+            x, y = LIVESTOCK_POSITIONS[i]
+            t = tiles[y][x]
+            if isinstance(t, dict) and t.get("animal") and t.get("yield_units", 0) > 0:
+                ready.append((x, y))
+        if (ux, uy) in ready:
+            return ["HARVEST"]
+        step = _nearest_step(pos, ready, tiles)
+        return [step] if step else ["PASS"]
+
     cur_idx = next((i for i in idxs if LIVESTOCK_POSITIONS[i] == (ux, uy)), None)
     if cur_idx is not None:
         atype = LIVESTOCK_TYPES[cur_idx]
         x, y = LIVESTOCK_POSITIONS[cur_idx]
         tile = tiles[y][x]
-        if tile is None:
+        if tile == "LOCKED":
+            pass
+        elif tile is None:
             return ["BUILD_PASTURE"]
-        if tile.get("kind") == ANIMAL_STRUCTURE and not tile.get("animal"):
+        elif tile.get("kind") == ANIMAL_STRUCTURE and not tile.get("animal"):
             if inv.get(atype, 0) > 0:
                 return ["PLACE", atype]
         elif tile.get("animal") == atype:
@@ -269,8 +416,8 @@ def _livestock_action(pos, inv, tiles, shed, idxs):
                 if inv.get(atype, 0) == 0:
                     missing_animal = True
         if unfed_remaining > inv.get("WHEAT", 0) or missing_animal:
-            target = min(SHED_ADJACENT, key=lambda p: abs(p[0] - ux) + abs(p[1] - uy))
-            step = _step_toward((ux, uy), target)
+            owned_shed = [p for p in SHED_ADJACENT if tiles[p[1]][p[0]] != "LOCKED"]
+            step = _owned_step_toward((ux, uy), owned_shed, tiles)
             if step:
                 return [step]
 
@@ -298,7 +445,7 @@ def _livestock_action(pos, inv, tiles, shed, idxs):
                 other_needy.append((x, y))
             elif t["fed_today"] and not t["cared_today"]:
                 other_needy.append((x, y))
-    step = _nearest_step((ux, uy), feed_needy) or _nearest_step((ux, uy), other_needy)
+    step = _nearest_step((ux, uy), feed_needy, tiles) or _nearest_step((ux, uy), other_needy, tiles)
     if step:
         return [step]
     return ["PASS"]
@@ -310,13 +457,28 @@ def _livestock_action(pos, inv, tiles, shed, idxs):
 # with different max_yield_day and seed price. Ongoing crops (tomato,
 # strawberry) would need a different function -- not used here.
 
-def _crop_action(crop, max_yield_day, pos, day, tiles, idxs, positions):
+def _crop_action(crop, max_yield_day, pos, inv, day, tiles, idxs, positions, plant_allowed=True, liquidation=False):
     ux, uy = pos
+    if liquidation:
+        returning = _return_to_shed(pos, inv, tiles)
+        if returning:
+            return returning
+        ready = []
+        for i in idxs:
+            x, y = positions[i]
+            t = tiles[y][x]
+            if isinstance(t, dict) and t.get("kind") == "PLANT" and t.get("yield_units", 0) > 0:
+                ready.append((x, y))
+        if (ux, uy) in ready:
+            return ["HARVEST"]
+        step = _nearest_step(pos, ready, tiles)
+        return [step] if step else ["PASS"]
+
     cur_idx = next((i for i in idxs if positions[i] == (ux, uy)), None)
     if cur_idx is not None:
         x, y = positions[cur_idx]
         tile = tiles[y][x]
-        if tile is None:
+        if tile is None and plant_allowed:
             return ["PLANT", crop]
         # A crop tile pool can reach into NE before land is bought (locked
         # tiles are passable, so a unit can end up standing on one); "LOCKED"
@@ -326,8 +488,10 @@ def _crop_action(crop, max_yield_day, pos, day, tiles, idxs, positions):
             if tile.get("kind") == "WEED":
                 return ["DIG"]
             if tile.get("kind") == "PLANT":
+                tile_crop = tile.get("crop", crop)
+                tile_max_yield_day = CROP_MAX_YIELD_DAY.get(tile_crop, max_yield_day)
                 age = day - tile["planted_day"]
-                if age >= max_yield_day and tile["yield_units"] > 0:
+                if age >= tile_max_yield_day and tile["yield_units"] > 0:
                     return ["HARVEST"]
                 if not tile["watered_today"]:
                     return ["WATER"]
@@ -340,32 +504,47 @@ def _crop_action(crop, max_yield_day, pos, day, tiles, idxs, positions):
     for i in idxs:
         x, y = positions[i]
         t = tiles[y][x]
-        if t is None:
+        if t is None and plant_allowed:
             other_needy.append((x, y))
         elif isinstance(t, dict) and t.get("kind") == "WEED":
             other_needy.append((x, y))
         elif isinstance(t, dict) and t.get("kind") == "PLANT":
+            tile_crop = t.get("crop", crop)
+            tile_max_yield_day = CROP_MAX_YIELD_DAY.get(tile_crop, max_yield_day)
             age = day - t["planted_day"]
-            if age >= max_yield_day and t["yield_units"] > 0:
+            if age >= tile_max_yield_day and t["yield_units"] > 0:
                 other_needy.append((x, y))
             elif not t["watered_today"]:
                 water_needy.append((x, y))
-    step = _nearest_step((ux, uy), water_needy) or _nearest_step((ux, uy), other_needy)
+    step = _nearest_step((ux, uy), water_needy, tiles) or _nearest_step((ux, uy), other_needy, tiles)
     if step:
         return [step]
     return ["PASS"]
 
 
-def _melon_action(pos, day, tiles, idxs):
-    return _crop_action("MELON", MELON_YIELD_DAY, pos, day, tiles, idxs, MELON_POSITIONS)
+def _melon_action(pos, inv, day, tiles, idxs):
+    # Past MELON_EXIT_DAY, empty tiles in this same pool get WHEAT instead --
+    # no crew restructuring needed, the hand just keeps working its assigned
+    # tiles. Already-growing melon is unaffected: HARVEST only fires once the
+    # tile's real yield_units > 0 (set by the engine, not by max_yield_day
+    # here), so passing WHEAT's shorter max_yield_day for a tile that's
+    # actually still-growing melon can't trigger a premature harvest -- it
+    # just keeps falling through to WATER, same as before.
+    if day < MELON_EXIT_DAY:
+        return _crop_action("MELON", MELON_YIELD_DAY, pos, inv, day, tiles, idxs, MELON_POSITIONS)
+    return _crop_action("WHEAT", CROP_MAX_YIELD_DAY["WHEAT"], pos, inv, day, tiles, idxs,
+                        MELON_POSITIONS, plant_allowed=day < WHEAT_EXIT_DAY,
+                        liquidation=day >= LIQUIDATION_DAY)
 
 
-def _wheat_crop_action(pos, day, tiles, idxs):
-    return _crop_action("WHEAT", CROP_MAX_YIELD_DAY["WHEAT"], pos, day, tiles, idxs, WHEAT_POSITIONS)
+def _wheat_crop_action(pos, inv, day, tiles, idxs):
+    return _crop_action("WHEAT", CROP_MAX_YIELD_DAY["WHEAT"], pos, inv, day, tiles, idxs, WHEAT_POSITIONS,
+                        plant_allowed=day < WHEAT_EXIT_DAY, liquidation=day >= LIQUIDATION_DAY)
 
 
-def _carrot_action(pos, day, tiles, idxs):
-    return _crop_action("CARROT", CROP_MAX_YIELD_DAY["CARROT"], pos, day, tiles, idxs, CARROT_POSITIONS)
+def _carrot_action(pos, inv, day, tiles, idxs):
+    return _crop_action("CARROT", CROP_MAX_YIELD_DAY["CARROT"], pos, inv, day, tiles, idxs, CARROT_POSITIONS,
+                        plant_allowed=day < 27, liquidation=day >= LIQUIDATION_DAY)
 
 
 # Kaggle's real submission loader (kaggle_environments/agent.py::get_last_callable)
@@ -387,6 +566,7 @@ def agent(obs):
 
     buy_orders = []
     sell_orders = []
+    liquidating = day >= LIQUIDATION_DAY
 
     # Only HIRE truly needs hour 0 (hands are hired for the whole day, once).
     # Every other purchase type is spread across its own hour instead of all
@@ -398,31 +578,46 @@ def agent(obs):
     prices = obs.get("market", {}).get("prices", {})
 
     for item, n in list(shed.items()):
-        if n <= 0 or item == "WHEAT":
+        if n <= 0 or item == "WHEAT" or item not in SELLABLE_PRODUCTS:
             continue
         base = _BASE_PRICE.get(item)
         cur = prices.get(item)
         # Hold instead of dumping while the price is depressed below the
         # gate -- but never past shedCapacity (100): losing product to
         # overflow is strictly worse than selling it cheap.
-        if SELL_MIN_PRICE_FRAC > 0 and base and cur is not None and cur < SELL_MIN_PRICE_FRAC * base and n < 90:
+        if not liquidating and SELL_MIN_PRICE_FRAC > 0 and base and cur is not None and cur < SELL_MIN_PRICE_FRAC * base and n < 90:
             continue
         sell_orders.append(["SELL", item, n])
 
-    if WHEAT_TILES > 0:
-        # Wheat barely reacts to glut (RULES.md Price Function table), so
-        # any surplus beyond a 2-day feed reserve is free money to sell,
-        # not just a cost saved on feed.
-        wheat_reserve = len(LIVESTOCK_TYPES) * 2
-        wheat_surplus = shed.get("WHEAT", 0) - wheat_reserve
-        if wheat_surplus > 0:
-            sell_orders.append(["SELL", "WHEAT", wheat_surplus])
+    # Wheat barely reacts to glut (RULES.md Price Function table), so any
+    # surplus beyond a 2-day feed reserve is free money to sell, not just a
+    # cost saved on feed. Not gated on WHEAT_TILES (0 by default) because
+    # MELON_EXIT_DAY routes ex-melon tiles into WHEAT too -- this check is
+    # self-gating (wheat_surplus > 0) regardless of the source.
+    wheat_reserve = 0 if liquidating else len(LIVESTOCK_TYPES) * 2
+    wheat_surplus = shed.get("WHEAT", 0) - wheat_reserve
+    if wheat_surplus > 0:
+        sell_orders.append(["SELL", "WHEAT", wheat_surplus])
+
+    # A static crew plan can include work in the next quadrant. Hire only the
+    # usable prefix, preserving hand-slot/job alignment while avoiding wages
+    # for a hand whose entire assignment is still locked.
+    active_hires = 0
+    for job, idxs in _CREW_PLAN:
+        positions = LIVESTOCK_POSITIONS if job == "LIVESTOCK" else {
+            "MELON": MELON_POSITIONS, "WHEAT": WHEAT_POSITIONS,
+            "CARROT": CARROT_POSITIONS,
+        }[job]
+        if any(tiles[positions[i][1]][positions[i][0]] != "LOCKED" for i in idxs):
+            active_hires += 1
+        else:
+            break
 
     if hour == 0:
-        for _ in range(N_HIRES):
+        for _ in range(active_hires):
             buy_orders.append(["HIRE"])
 
-    if hour == 1:
+    if hour == 1 and not liquidating:
         # Wheat feed is funded before any other spend, at the live market
         # price -- an existing herd starving because some other purchase ate
         # the day's cash is an unrecoverable death spiral (2 unfed days =
@@ -441,7 +636,7 @@ def agent(obs):
             if n_buy > 0:
                 buy_orders.append(["BUY_PRODUCT", "WHEAT", n_buy])
 
-    if hour == 2:
+    if hour == 2 and day < 21:
         # Buy missing COW/SHEEP up to ANIMAL_MIX, capped by affordability
         # and (if set) a per-day purchase cap.
         needed_counts = {}
@@ -467,39 +662,60 @@ def agent(obs):
                 cash -= n_buy * cost_each
                 remaining_cap -= n_buy
 
-    if hour == 3 and BUY_NE_LAND and day >= LAND_MIN_DAY and "NE" not in me.get("unlocked_quadrants", ["NW"]) and money >= 1200:
+    owned_tiles = [t for row in tiles for t in row if t != "LOCKED"]
+    occupied_owned = sum(t is not None for t in owned_tiles)
+    land_utilization = occupied_owned / len(owned_tiles) if owned_tiles else 0
+    unlocked_count = len(me.get("unlocked_quadrants", ["NW"]))
+    expansion_ready = unlocked_count == 1 or land_utilization >= LAND_UTILIZATION_TRIGGER
+    if (hour == 3 and not liquidating and day >= LAND_MIN_DAY
+            and unlocked_count < LAND_TARGET_QUADRANTS and expansion_ready):
+        # No money precheck: the engine silently no-ops an unaffordable
+        # BUY_LAND, and re-issuing it every day until it lands is the exact
+        # idiom every top-10 leaderboard agent uses (report.md) -- it
+        # guarantees the purchase clears on the earliest affordable day with
+        # no risk of a stale one-shot check missing the window.
         buy_orders.append(["BUY_LAND"])
 
-    if hour == 4:
-        empty_melon = sum(1 for x, y in MELON_POSITIONS if tiles[y][x] is None)
-        have_seeds = seeds.get("MELON", 0)
-        if empty_melon > have_seeds:
-            buy_orders.append(["BUY_SEED", "MELON", empty_melon - have_seeds])
+    if hour == 4 and day < WHEAT_EXIT_DAY:
+        empty_positions = [(x, y) for x, y in MELON_POSITIONS if tiles[y][x] is None]
+        if day < MELON_EXIT_DAY:
+            have_seeds = seeds.get("MELON", 0)
+            if len(empty_positions) > have_seeds:
+                buy_orders.append(["BUY_SEED", "MELON", len(empty_positions) - have_seeds])
+        else:
+            # Past the exit day, _melon_action plants WHEAT on this same
+            # pool instead -- keep its seed supply matched here too.
+            have_seeds = seeds.get("WHEAT", 0)
+            if len(empty_positions) > have_seeds:
+                buy_orders.append(["BUY_SEED", "WHEAT", len(empty_positions) - have_seeds])
 
-    if hour == 5 and WHEAT_TILES > 0:
+    if hour == 5 and WHEAT_TILES > 0 and day < WHEAT_EXIT_DAY:
         empty_wheat = sum(1 for x, y in WHEAT_POSITIONS if tiles[y][x] is None)
         have_seeds = seeds.get("WHEAT", 0)
         if empty_wheat > have_seeds:
             buy_orders.append(["BUY_SEED", "WHEAT", empty_wheat - have_seeds])
 
-    if hour == 6 and CARROT_TILES > 0:
+    if hour == 6 and CARROT_TILES > 0 and day < 27:
         empty_carrot = sum(1 for x, y in CARROT_POSITIONS if tiles[y][x] is None)
         have_seeds = seeds.get("CARROT", 0)
         if empty_carrot > have_seeds:
             buy_orders.append(["BUY_SEED", "CARROT", empty_carrot - have_seeds])
 
-    market = buy_orders + sell_orders
+    # Closing sales take precedence; at other times leave enough room after
+    # buys and explicitly enforce the engine's silent 10-order limit.
+    market = (sell_orders + buy_orders if liquidating else buy_orders + sell_orders)[:10]
 
     fx, fy = me["farmer"]
     farmer_inv = inventories[0] if inventories else {}
     farmer_idxs = LIVESTOCK_GROUPS[0] if LIVESTOCK_GROUPS else []
-    farmer_action = _livestock_action((fx, fy), farmer_inv, tiles, shed, farmer_idxs) if farmer_idxs else ["PASS"]
+    farmer_action = (_livestock_action((fx, fy), farmer_inv, tiles, shed, farmer_idxs, liquidating)
+                     if farmer_idxs else ["PASS"])
 
     _DISPATCH = {
-        "LIVESTOCK": lambda pos, inv, idxs: _livestock_action(pos, inv, tiles, shed, idxs),
-        "MELON": lambda pos, inv, idxs: _melon_action(pos, day, tiles, idxs),
-        "WHEAT": lambda pos, inv, idxs: _wheat_crop_action(pos, day, tiles, idxs),
-        "CARROT": lambda pos, inv, idxs: _carrot_action(pos, day, tiles, idxs),
+        "LIVESTOCK": lambda pos, inv, idxs: _livestock_action(pos, inv, tiles, shed, idxs, liquidating),
+        "MELON": lambda pos, inv, idxs: _melon_action(pos, inv, day, tiles, idxs),
+        "WHEAT": lambda pos, inv, idxs: _wheat_crop_action(pos, inv, day, tiles, idxs),
+        "CARROT": lambda pos, inv, idxs: _carrot_action(pos, inv, day, tiles, idxs),
     }
 
     hands = me.get("hands", [])

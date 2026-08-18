@@ -1,0 +1,5 @@
+{
+  "baseline19": {},
+  "melon14": {"MAX_MELON_TILES": 14},
+  "melon16": {"MAX_MELON_TILES": 16}
+}

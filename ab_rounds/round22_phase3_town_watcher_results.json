@@ -1,0 +1,26 @@
+{
+  "round": "round22_phase3_town_watcher",
+  "preceding_variant": "phase2_adaptive",
+  "candidate_variant": "phase3_town_rules",
+  "smoke": {
+    "opponent": "starter",
+    "episode_steps": 120,
+    "episodes_per_variant": 4,
+    "phase2_mean": 175.0,
+    "phase3_mean": 175.5
+  },
+  "paired_screen": {
+    "opponent": "starter",
+    "episode_steps": 720,
+    "seed_base": 22000,
+    "n": 20,
+    "phase2_mean": 22435.9,
+    "phase3_mean": 22435.9,
+    "paired_difference_mean": 0.0,
+    "paired_difference_stdev": 0.0,
+    "phase2_range": [14711.0, 32709.0],
+    "phase3_range": [14711.0, 32709.0]
+  },
+  "decision": "not_promoted",
+  "reason": "The township signals changed watcher scores but produced identical full-season actions and money on all 20 paired starter seeds, so the required confidence interval above zero is impossible. Confirmation testing was not entered."
+}

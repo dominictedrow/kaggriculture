@@ -1,0 +1,42 @@
+{
+  "redirect_control": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": false
+  },
+  "town_redirect_1": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_MAX_CROP_REDIRECT": 1
+  },
+  "town_redirect_2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_MAX_CROP_REDIRECT": 2
+  },
+  "town_redirect_4": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_MAX_CROP_REDIRECT": 4
+  },
+  "town_redirect_6": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 10,
+    "TOWN_MAX_CROP_REDIRECT": 6
+  },
+  "town_d15_redirect_2": {
+    "ENABLE_DEADLINE_PLANNER": true,
+    "ENABLE_ADAPTIVE_TARGETS": true,
+    "ENABLE_TOWN_WATCHER": true,
+    "TOWN_WATCHER_START_DAY": 15,
+    "TOWN_MAX_CROP_REDIRECT": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "baseline": {},
+  "cow6": {"ANIMAL_MIX": {"COW": 6}},
+  "sheep6": {"ANIMAL_MIX": {"SHEEP": 6}},
+  "cow3sheep3": {"ANIMAL_MIX": {"COW": 3, "SHEEP": 3}},
+  "cow5sheep1": {"ANIMAL_MIX": {"COW": 5, "SHEEP": 1}},
+  "cow2sheep4": {"ANIMAL_MIX": {"COW": 2, "SHEEP": 4}},
+  "melon15": {"MAX_MELON_TILES": 15},
+  "melon12": {"MAX_MELON_TILES": 12}
+}

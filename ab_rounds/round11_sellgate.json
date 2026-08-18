@@ -1,0 +1,8 @@
+{
+  "h17_gate0": {"ANIMAL_MIX": {"COW": 11, "SHEEP": 6}, "LIVESTOCK_HANDS": 6},
+  "h17_gate20": {"ANIMAL_MIX": {"COW": 11, "SHEEP": 6}, "LIVESTOCK_HANDS": 6, "SELL_MIN_PRICE_FRAC": 0.2},
+  "h17_gate40": {"ANIMAL_MIX": {"COW": 11, "SHEEP": 6}, "LIVESTOCK_HANDS": 6, "SELL_MIN_PRICE_FRAC": 0.4},
+  "h17_gate60": {"ANIMAL_MIX": {"COW": 11, "SHEEP": 6}, "LIVESTOCK_HANDS": 6, "SELL_MIN_PRICE_FRAC": 0.6},
+  "h14_gate0": {},
+  "h14_gate40": {"SELL_MIN_PRICE_FRAC": 0.4}
+}

@@ -1,0 +1,6 @@
+{
+  "wheat8_h1": {"WHEAT_TILES": 8, "WHEAT_HANDS": 1},
+  "wheat10_h1": {"WHEAT_TILES": 10, "WHEAT_HANDS": 1},
+  "wheat12_h1": {"WHEAT_TILES": 12, "WHEAT_HANDS": 1},
+  "wheat14_h1": {"WHEAT_TILES": 14, "WHEAT_HANDS": 1}
+}
