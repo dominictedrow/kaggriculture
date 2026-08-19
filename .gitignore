@@ -3,3 +3,4 @@ __pycache__/
 ab_tests/
 kaggle_replays/
 *.log
+.DS_Store
