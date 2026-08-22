@@ -44,7 +44,7 @@ def download_replay(episode_id, replay_dir, retries=100):
             error_text = (proc.stderr or proc.stdout)
             delay = 60 if "429" in error_text or "Too Many Requests" in error_text else min(60, 5 * (2 ** (attempt - 1)))
             time.sleep(delay)
-    
+
     return episode_id, "failed", (proc.stderr or proc.stdout).strip()
 
 
