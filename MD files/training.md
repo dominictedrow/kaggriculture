@@ -2,7 +2,7 @@
 
 ## Summary
 
-Replay translation has not occurred yet. Existing replay analyses produce strategy summaries, while `counterfactual_dataset.jsonl` uses randomly selected simulations and contains no replay provenance, family weighting, or expert-guided interventions.
+Replay translation has not occurred yet. Existing replay analyses produce strategy summaries, while `data/counterfactual_dataset.jsonl` uses randomly selected simulations and contains no replay provenance, family weighting, or expert-guided interventions.
 
 Build a two-stage pipeline: convert accepted leaderboard trajectories into observational expert proposals, then use those proposals to guide paired simulations that produce causal SVM labels. Replays must never directly supply `+1/-1` labels.
 

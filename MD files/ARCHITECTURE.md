@@ -2,7 +2,7 @@
 
 ## Status at a glance
 
-The repository currently contains the data-generation side of a proposed linear-SVM watcher and a deterministic rules-based watcher at runtime. It does **not** yet contain an SVM ingestion/training pipeline, a fitted scaler, trained model coefficients, model export code, or live SVM inference.
+The repository contains the historical counterfactual generator, a fixed feature schema, an offline `LinearSVC` trainer/exporter, and hybrid runtime inference with deterministic per-signal fallback. It does **not** yet contain a qualifying replay-guided training artifact or fitted coefficients; those require regeneration from a family-split causal dataset.
 
 The implemented path is:
 
@@ -48,7 +48,7 @@ self-contained exported coefficients
 runtime watcher inference
 ```
 
-At runtime, `strategy_follower.py` presently implements only the deterministic watcher. Asking for the `linear_svm` backend deliberately falls back to `rules` because no model has been exported.
+At runtime, `strategy_follower.py` loads a compatible generated `watcher_model.py` when present. Asking for `linear_svm` falls back to rules when the artifact/schema is unavailable, and individual missing classifiers fall back to their corresponding rule signals.
 
 ## Architectural goal
 
@@ -287,7 +287,7 @@ The main generated artifacts under `kaggle_replays/training_data/` are:
 - `causal_training*.jsonl`: paired causal outcomes, provenance, audit data, labels, and weights;
 - matching `.summary.json` files: configuration hashes, quota status, class counts, rejection counts, and source coverage.
 
-Historical files at the repository root, such as `counterfactual_dataset.jsonl`, come from random simulations without the replay-family split architecture. They must not be silently mixed into the replay-guided corpus.
+Historical files under `data/`, such as `data/counterfactual_dataset.jsonl`, come from random simulations without the replay-family split architecture. They must not be silently mixed into the replay-guided corpus.
 
 ## 13. Current causal-row gap
 
@@ -317,7 +317,7 @@ The training/evaluation sequence should be:
 9. evaluate once on the untouched test families;
 10. export only models that pass offline and paired-game acceptance gates.
 
-This trainer does not currently exist.
+This sequence is implemented by `scripts/train_watcher.py`. It consumes only rows with explicit family/split provenance, excludes neutral labels from fitting and evaluation, fits scaling on the training cohort, selects `C` on validation balanced accuracy, evaluates the test cohort once, and exports only accepted outputs.
 
 ## 15. Runtime watcher integration
 
@@ -339,14 +339,14 @@ WATCHER_BACKEND = "rules"  # "off" | "rules" | "linear_svm"
 
 The rules implementation uses town demand, public opponent assets, current prices, market inventory, workload, and remaining season economics. These bounded signals feed `_adaptive_targets()`, which modifies crop and animal profitability scores and expansion targets while retaining deterministic clamps.
 
-At present:
+Without an exported artifact:
 
 ```text
 requested backend = linear_svm
 effective backend = rules
 ```
 
-There is no feature extraction, scaler application, coefficient lookup, decision-function calculation, or model-schema check in the runtime strategy. `main.py` also does not contain the newer watcher/SVM architecture and remains the current standalone submission artifact.
+With a compatible artifact, runtime extraction and pure-Python scoring are active. Increase and avoid margins combine as `clip(increase - avoid, -1, 1)`; a lone classifier supplies its signed evidence. Schema mismatch, missing output, non-finite score, and malformed input fall back safely. `main.py` remains unchanged and does not yet contain this architecture.
 
 ## 16. Tests and invariants
 
@@ -383,18 +383,10 @@ Implemented and structurally sound:
 - per-output quotas and availability reporting;
 - deterministic rules watcher and adaptive-target integration.
 
-Still required before leakage-free SVM training:
+Still required before producing a deployable fitted model:
 
 - extract features from the effective simulation checkpoint;
 - include those features and their schema hash in causal rows;
-- implement strict causal-data ingestion and validation;
-- recompute sample weights from training rows only;
-- define neutral-label handling;
-- enforce per-output, per-split signed class requirements;
-- implement train-only scaling and `LinearSVC` fitting;
-- implement validation selection and untouched test evaluation;
-- export scaler/model parameters into a self-contained artifact;
-- add real runtime `linear_svm` inference with safe fallback;
 - regenerate artifacts using the new 60/20/20 family split.
 
-Until these pieces exist, the repository should be described as having an SVM-oriented causal-data architecture, not a trained or deployed SVM system.
+Until these pieces exist, the repository should be described as having a complete train/export/inference implementation, but not a trained, gameplay-accepted, or deployed SVM model.

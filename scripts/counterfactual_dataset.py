@@ -267,7 +267,7 @@ def summarize_rows(rows):
 
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--output", type=Path, default=Path("counterfactual_smoke.jsonl"))
+    p.add_argument("--output", type=Path, default=Path("data/counterfactual_smoke.jsonl"))
     p.add_argument("--pairs", type=int, default=1)
     p.add_argument("--seed-base", type=int, default=0)
     p.add_argument("--episode-steps", type=int, default=720)
@@ -283,6 +283,7 @@ def main(argv=None):
         # executor.map preserves input order even when workers finish out of order.
         with ProcessPoolExecutor(max_workers=workers) as pool:
             rows = list(pool.map(_generate_task, tasks))
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8") as fh:
         for row in rows: fh.write(json.dumps(row, separators=(",", ":")) + "\n")
     summary = summarize_rows(rows)

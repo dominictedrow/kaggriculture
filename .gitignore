@@ -1,6 +1,13 @@
 __pycache__/
 *.pyc
+.venv/
+._*
+copy/
 ab_tests/
 kaggle_replays/
+data/*
+!data/README.md
+watcher_training_report.json
+watcher_training_report.md
 *.log
 .DS_Store
