@@ -160,7 +160,8 @@ def to_weights(rows, default=1.0):
     weights, missing = [], 0
     for row in rows:
         weight = row.get("sample_weight")
-        if weight is None or isinstance(weight, bool) or not isinstance(weight, (int, float)) or not math.isfinite(weight):
+        if (weight is None or isinstance(weight, bool) or
+                not isinstance(weight, (int, float)) or not math.isfinite(weight) or weight <= 0):
             weights.append(default)
             missing += 1
         else:
@@ -380,7 +381,18 @@ def run(rows_paths, families_path=None, output_path=None, report_path=None,
 
     families_manifest = None
     if families_path is not None:
-        families_manifest = json.loads(Path(families_path).read_text(encoding="utf-8"))
+        raw_manifest = json.loads(Path(families_path).read_text(encoding="utf-8"))
+        families = raw_manifest.get("families") if isinstance(raw_manifest, dict) else None
+        if isinstance(families, list):
+            families_manifest = {
+                row.get("family_id", row.get("strategy_family")): row.get("split")
+                for row in families
+                if row.get("family_id", row.get("strategy_family"))
+            }
+        elif isinstance(raw_manifest.get("family_splits") if isinstance(raw_manifest, dict) else None, dict):
+            families_manifest = raw_manifest["family_splits"]
+        else:
+            families_manifest = raw_manifest
     kept, split_rejected = resolve_splits(kept, families_manifest)
     rejected = rejected + split_rejected
 

@@ -151,13 +151,20 @@ if a future pass wants this lever again, isolate and AB-confirm each of
 the three changes independently rather than bundling.
 """
 
+try:
+    import shared_features as _watcher_features
+    import watcher_model as _watcher_model
+except (ImportError, AttributeError):
+    _watcher_features = None
+    _watcher_model = None
+
 # ---- Constants (the "easy to change" knobs) --------------------------------
 
 ENABLE_DEADLINE_PLANNER = True        # step 1 layer; False preserves the legacy unit chunks exactly
 ENABLE_ADAPTIVE_TARGETS = True        # step 2 layer; intended cumulatively with the deadline planner
 ENABLE_TOWN_WATCHER = True            # step 3 layer; exact unlocked-shop demand signals
 ENABLE_OPPONENT_WATCHER = True        # step 4 layer; six-day public-farm supply forecast
-WATCHER_BACKEND = "rules"             # "rules" now; "linear_svm" falls back until a model is exported
+WATCHER_BACKEND = "rules"             # set to "linear_svm" after exporting a compatible watcher_model.py
 TOWN_EXPOSURE_MULTIPLIER = 2.0        # production capacity relative to exact observed town demand
 TOWN_WATCHER_START_DAY = 10           # preserve the profitable opening through melon's first harvest
 TOWN_MAX_CROP_REDIRECT = 1            # best bounded township candidate from the n=60 tuning expansion
@@ -658,13 +665,19 @@ def watcher_signals(obs, backend):
     """Return bounded, observation-only watcher recommendations.
 
     Phase 3 enables exact township demand. Opponent forecasts remain neutral
-    until their independent layer is enabled. The unsupported SVM backend
-    deliberately falls back to deterministic rules.
+    until their independent layer is enabled. Compatible exported SVM models
+    override individual signals; missing/invalid outputs retain rule values.
     """
     requested_backend = backend
     if backend not in ("off", "rules", "linear_svm"):
         backend = "rules"
-    if backend == "linear_svm":
+    svm_ready = bool(
+        backend == "linear_svm" and
+        _watcher_features is not None and _watcher_model is not None and
+        getattr(_watcher_model, "SCHEMA_HASH", None) == _watcher_features.SCHEMA_HASH and
+        tuple(getattr(_watcher_model, "FEATURE_ORDER", ())) == tuple(_watcher_features.FEATURE_ORDER)
+    )
+    if backend == "linear_svm" and not svm_ready:
         backend = "rules"
 
     zeros = {product: 0.0 for product in _PRODUCTS}
@@ -753,6 +766,28 @@ def watcher_signals(obs, backend):
     unmet_pressure = max(attractiveness.values()) if attractiveness else 0.0
     scale_gap = (opponent_assets - own_assets) / 25.0
     expansion = max(-1.0, min(1.0, 0.65 * unmet_pressure + 0.35 * scale_gap))
+    if svm_ready:
+        try:
+            features = _watcher_features.extract_features(obs)
+            used_model = False
+            for product in _PRODUCTS:
+                increase = _watcher_model.score(f"product:{product}:increase", features)
+                avoid = _watcher_model.score(f"product:{product}:avoid", features)
+                increase = increase if isinstance(increase, (int, float)) and not isinstance(increase, bool) and increase == increase and abs(increase) != float("inf") else None
+                avoid = avoid if isinstance(avoid, (int, float)) and not isinstance(avoid, bool) and avoid == avoid and abs(avoid) != float("inf") else None
+                if increase is not None or avoid is not None:
+                    attractiveness[product] = max(
+                        -1.0, min(1.0, (increase or 0.0) - (avoid or 0.0))
+                    )
+                    used_model = True
+            svm_expansion = _watcher_model.score("competitive_expansion", features)
+            svm_expansion = svm_expansion if isinstance(svm_expansion, (int, float)) and not isinstance(svm_expansion, bool) and svm_expansion == svm_expansion and abs(svm_expansion) != float("inf") else None
+            if svm_expansion is not None:
+                expansion = max(-1.0, min(1.0, svm_expansion))
+                used_model = True
+            backend = "linear_svm" if used_model else "rules"
+        except (KeyError, TypeError, ValueError, ArithmeticError):
+            backend = "rules"
     return {
         "product_attractiveness": attractiveness,
         "town_demand_pressure": town_pressure,
